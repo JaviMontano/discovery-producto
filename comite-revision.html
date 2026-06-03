@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Revisión del Workbook de Discovery por un comité de cuatro expertos (Pichler, Osterwalder, Patton, Ries): hallazgos, debate socrático y change-set aplicado en v3.0.">
+<meta name="author" content="Javier Montaño · MetodologIA">
+<title>Comité de Discovery · Revisión y debate</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23122562'/%3E%3Cstop offset='100%25' stop-color='%231F2833'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='36' height='36' rx='10' fill='url(%23g)'/%3E%3Cpath d='M10 12h3v12h-3V12zm6 0h3v8h-3v-8zm0 10h3v2h-3v-2zm6-10h3v6h-3v-6zm0 8h3v4h-3v-4z' fill='%23fff'/%3E%3Ccircle cx='18' cy='8' r='2' fill='%23FFD700'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--navy:#122562;--gold:#FFD700;--gold-dark:#8a6500;--blue:#137DC5;--paper:#F9FAFB;--ink:#1F2833;--muted:#5B6677;--line:rgba(18,37,98,.14);--soft:#FFF8D6;--font-head:'Poppins',system-ui,sans-serif;--font-body:'Montserrat',system-ui,sans-serif;--font-mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);line-height:1.65}
+h1,h2,h3,h4{font-family:var(--font-head);line-height:1.15;color:var(--navy);margin:0}
+h1{font-size:clamp(1.9rem,4.5vw,3.2rem)}h2{font-size:clamp(1.4rem,3vw,2rem);margin-top:0}h3{font-size:1.08rem}h4{font-size:.95rem}
+p{margin:.6rem 0 0}.wrap{max-width:1000px;margin:auto;padding:2.4rem 1.1rem}
+.cover{background:linear-gradient(135deg,#fff 0%,#f3f6fb 58%,#fff8d6 100%);border-bottom:1px solid var(--line)}
+.badge{display:inline-flex;padding:.35rem .7rem;border-radius:999px;background:rgba(255,215,0,.18);border:1px solid rgba(255,215,0,.45);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--gold-dark);margin-bottom:1rem}
+.lead{font-size:1.05rem;color:var(--muted);max-width:74ch}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1.15rem;box-shadow:0 10px 28px rgba(18,37,98,.07)}
+.card p,.card li{color:var(--muted);font-size:.93rem}
+.expert{border-left:5px solid var(--gold)}
+.expert .who{font-family:var(--font-mono);font-size:.74rem;color:var(--gold-dark);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.tag{display:inline-block;font-family:var(--font-mono);font-size:.66rem;font-weight:700;color:var(--gold-dark);background:rgba(255,215,0,.16);border:1px solid rgba(255,215,0,.4);border-radius:999px;padding:.12rem .55rem;margin:.15rem .2rem 0 0}
+.callout{background:var(--soft);border-left:5px solid var(--gold);border-radius:10px;padding:1rem 1.15rem;margin-top:1rem}
+.debate{display:grid;gap:.6rem;margin-top:1rem}
+.turn{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.7rem .9rem}
+.turn .sp{font-weight:700;color:var(--navy);font-family:var(--font-head);font-size:.86rem}
+.turn.mod{background:#0A122A;color:#E8EEF8;border-color:#24324f}.turn.mod .sp{color:var(--gold)}
+.turn p{margin:.25rem 0 0;font-size:.92rem}
+.q{font-style:italic;color:var(--blue);font-size:.9rem;margin:.3rem 0 0}
+table{width:100%;border-collapse:collapse;min-width:680px;font-size:.9rem}
+.table{overflow:auto;border:1px solid var(--line);border-radius:12px;background:#fff;margin-top:1rem}
+th{background:var(--navy);color:var(--gold);text-align:left}th,td{padding:.7rem;border-bottom:1px solid var(--line);vertical-align:top}td{color:var(--muted)}
+ul{margin:.5rem 0 0;padding-left:1.1rem}li{margin:.25rem 0;font-size:.92rem;color:var(--muted)}
+.new{color:#15803d;font-weight:700}.code{font-family:var(--font-mono);font-size:.85em;background:rgba(18,37,98,.06);padding:.05rem .35rem;border-radius:5px}
+.footer{background:#0A122A;color:rgba(255,255,255,.72);padding:2rem 1rem}.footer div{max-width:1000px;margin:auto}.footer strong{color:var(--gold)}
+.docset-bar{background:#0A122A;color:#f4f1e8;font-family:system-ui,'Poppins',sans-serif;font-size:.8rem;padding:.5rem .9rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .55rem;justify-content:center;border-bottom:2px solid #FFD700}
+.docset-bar a{color:#f4f1e8;text-decoration:none}
+.verdict{background:#0A122A;color:#E8EEF8;border-radius:12px;padding:1.2rem 1.3rem;margin-top:1rem;border:1px solid #24324f}
+.verdict h3{color:var(--gold)}
+@media(max-width:780px){.grid-2{grid-template-columns:1fr}table{min-width:560px}}
+</style>
+</head>
+<body>
+<div class="docset-bar"><span style="color:#FFD700;font-weight:700">Discovery de Producto:</span> <a href="workbook.html">Workbook</a> <span style="opacity:.4">›</span> <span aria-current="page" style="color:#FFD700;font-weight:700">Comité · Revisión</span> <span style="opacity:.4">·</span> <a href="index.html" style="color:#cbd5e1">↑ Hub</a></div>
+
+<header class="cover">
+  <div class="wrap">
+    <span class="badge">Comité de Discovery · revisión y debate</span>
+    <h1>Cuatro expertos auditan el Workbook</h1>
+    <p class="lead">Sometimos el Workbook de Discovery de Producto a un comité de cuatro autoridades personificadas. Revisaron todo el texto y los prompts desde su lente, debatieron sus desacuerdos en clave socrática y consolidaron un change-set que ya se aplicó en la <strong>v3.0</strong>. Marco rector: el deck-masterclass <em>De Bocetos a Prototipos, con IA</em> — señal sobre ruido, enamórate del problema, falla rápido, el método asegura el destino.</p>
+  </div>
+</header>
+
+<main>
+  <section class="wrap">
+    <span class="badge">El comité</span>
+    <h2>Quién revisó y con qué lente</h2>
+    <div class="grid-2" style="margin-top:1rem">
+      <article class="card expert"><div class="who">Roman Pichler</div><h3>Product Vision Board / Estrategia</h3><p>La visión guía la estrategia y la estrategia guía el resto. Visión aspiracional y agnóstica del producto; separar necesidad de solución; metas medibles; trazabilidad Necesidad → Producto → Meta.</p></article>
+      <article class="card expert"><div class="who">Alex Osterwalder</div><h3>Value Proposition + Business Model</h3><p>El valor se diseña confrontando jobs/pains/gains contra products/relievers/creators. Toda idea es un montón de supuestos que deben probarse con test cards antes de escalar.</p></article>
+      <article class="card expert"><div class="who">Jeff Patton</div><h3>User Story Mapping / Outcomes</h3><p>Los documentos no son entendimiento compartido. Importan los outcomes sobre el output. El primer slice (walking skeleton) conecta discovery con delivery sin perder la narrativa del usuario.</p></article>
+      <article class="card expert"><div class="who">Eric Ries</div><h3>Lean Startup / Validated learning</h3><p>Build-Measure-Learn, leap-of-faith assumptions, MVP como experimento, pivotar/perseverar. Construir a ciegas es diseñar el propio fracaso.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-top:0">
+    <span class="badge">Hallazgos por experto</span>
+    <h2>El diagnóstico, en una frase y sus brechas</h2>
+    <div class="grid-2" style="margin-top:1rem">
+      <article class="card"><h3>Pichler</h3><p>El recorrido respetaba el orden correcto, pero trataba el Vision Board como un formulario de cinco casillas, no como hipótesis estratégica encadenada.</p><ul><li>La visión no se exigía aspiracional ni agnóstica del producto (faltaba la prueba "si el producto desaparece, ¿la visión sobrevive?").</li><li>No se separaba Necesidad (problema) de Producto (solución), ni se exigían metas medibles.</li><li>El brief introducía "propuesta de valor" antes de la visión, contaminando la secuencia.</li></ul></article>
+      <article class="card"><h3>Osterwalder</h3><p>El "valor" se afirmaba en tres lugares (brief, board, BMC) pero nunca se diseñaba ni se probaba.</p><ul><li>Faltaba el <span class="new">Value Proposition Canvas</span> como puente entre brief y BMC.</li><li>No existía un mapa de supuestos / test cards: el riesgo nunca se priorizaba.</li><li>El veredicto de market fit confundía coherencia documental con evidencia.</li></ul></article>
+      <article class="card"><h3>Patton</h3><p>El éxito se definía como "tener los seis documentos" — output, no outcome.</p><ul><li>Faltaba un <span class="new">User Story Map / primer slice</span> que tradujera el journey en entrega priorizada.</li><li>El CJM no distinguía lo observado de lo supuesto ni proponía cómo validar.</li><li>El walking skeleton debía priorizarse por riesgo, no por feature.</li></ul></article>
+      <article class="card"><h3>Ries</h3><p>El workbook saltaba de la idea al modelo de negocio sin un loop de validación.</p><ul><li>Marcaba <span class="code">[SUPUESTO]</span> con disciplina pero nunca los cobraba.</li><li>Faltaba un <span class="new">Tablero de Supuestos + Experimentos</span> priorizado por riesgo.</li><li>El veredicto de market fit no se apoyaba en evidencia de campo.</li></ul></article>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-top:0">
+    <span class="badge">Debate socrático</span>
+    <h2>Dónde chocaron y cómo convergieron</h2>
+    <p class="lead">El moderador cruzó los conflictos reales: ¿el Story Map es discovery o delivery? ¿el VPC se solapa con el brief? ¿dónde vive la validación? ¿cuántos pasos sin inflar el taller?</p>
+    <div class="debate">
+      <div class="turn"><span class="sp">Osterwalder</span><p>Tu Vision Board afirma el fit; el VPC lo diseña y declara qué parte sigue siendo supuesto. Trato: el board se queda en lo estratégico y agnóstico —"si el producto desaparece, ¿la visión sobrevive?"— y cede el detalle del fit al VPC. Cada uno hace una cosa, ninguno repite.</p></div>
+      <div class="turn"><span class="sp">Pichler</span><p>Acepto el reparto, pero exijo trazabilidad: cada gain creator del VPC debe rastrearse a una Necesidad del board y a una Meta medible. Sin esa cadena seguimos rellenando casillas.</p></div>
+      <div class="turn"><span class="sp">Ries</span><p>Y la condición sin la cual nada reduce riesgo: ese fit es una hipótesis, no un hallazgo. Que todos los supuestos converjan en un Tablero priorizado por riesgo y que los tres peores se vuelvan experimentos con criterio pivotar/perseverar definido <em>antes</em> de ver resultados.</p></div>
+      <div class="turn"><span class="sp">Osterwalder</span><p>Mismo frente, Eric. El veredicto confunde problem-solution fit con product-market fit. Sin datos de campo, el BMC debe declarar "market fit NO DEMOSTRADO". Pero, ¿puede un taller para principiantes exigir evidencia de campo de verdad?</p><p class="q">— ¿O nos rendimos a la coherencia documental por comodidad?</p></div>
+      <div class="turn"><span class="sp">Ries</span><p>No pedimos recolectar la evidencia dentro del taller; pedimos diseñarla y dejarla agendada. La IA formula el experimento barato —una conversación, una landing, un concierge—; el humano lo ejecuta. La diferencia entre un taller honesto y una mentira seductora es una frase de cierre: "corre el experimento de la fila 1 y vuelve con datos".</p></div>
+      <div class="turn"><span class="sp">Patton</span><p>Y conecta con mi obsesión: outcome sobre output. Reescribamos el éxito como "tomé una decisión accionable, definí el primer slice e identifiqué mi mayor riesgo y su próxima prueba". El tablero de Eric, el VPC de Alex y mi story map son la cadena que convierte ocho plantillas en una decisión.</p></div>
+      <div class="turn"><span class="sp">Pichler</span><p>Pero alguien defiende la regla anti-inflación: si cada uno mete su caja, pasamos de seis a nueve pasos y un principiante no termina ninguno. Presupuesto de slots: máximo dos pasos nuevos, y el Service Blueprint se acota al primer slice.</p></div>
+      <div class="turn"><span class="sp">Osterwalder</span><p>Acepto. Mis innegociables son el VPC y el Tablero de Supuestos. El story map de Jeff vive como salida del Tablero (el slice), y el blueprint se acota a la rebanada. Seis pasos que reducen riesgo valen más que nueve que documentan.</p></div>
+      <div class="turn"><span class="sp">Ries</span><p>Cerremos el orden: visión primero como brújula, sí, pero etiquetada desde el minuto cero como el supuesto más riesgoso a probar. El brief renombra "propuesta de valor" a "hipótesis de valor provisional". La validación deja de ser un apéndice del final para ser un hilo que atraviesa todo.</p></div>
+      <div class="turn mod"><span class="sp">Moderador</span><p>Convergencia: un fit diseñado y trazable, supuestos que se cobran, un veredicto honesto y un cierre que empuja a la realidad, dentro de un presupuesto de dos pasos nuevos más blindaje de gates.</p></div>
+    </div>
+
+    <div class="grid-2" style="margin-top:1.2rem">
+      <article class="card"><h3>Consensos</h3><ul>
+        <li>El workbook documentaba mejor de lo que validaba.</li>
+        <li>El veredicto del BMC debe distinguir problem-solution fit de product-market fit; sin datos, "market fit NO DEMOSTRADO".</li>
+        <li>Cerrar el bucle de los <span class="code">[SUPUESTO]</span> en un Tablero priorizado por riesgo con experimentos.</li>
+        <li>Reencuadrar el éxito de output a outcome (hero, artefactos, cierre).</li>
+        <li>Brief: "propuesta de valor" → "hipótesis de valor (provisional)"; la visión manda sobre el brief.</li>
+        <li>Vision Board y VPC no se duplican: board estratégico/agnóstico, VPC el detalle del fit, con trazabilidad.</li>
+        <li>Cierre en acción ("corre el experimento de la fila 1"); la IA diseña, el humano ejecuta.</li>
+        <li>Anti-inflación: máx. dos pasos nuevos + Service Blueprint acotado al slice.</li>
+        <li>"Sin precios ≠ sin métricas": metas medibles, métricas accionables.</li>
+      </ul></article>
+      <article class="card"><h3>Disensos (dejados explícitos)</h3><ul>
+        <li>Jerarquía si se aprieta el presupuesto: Patton prioriza el Story Map; Osterwalder el VPC + Tablero; Ries un solo paso (Tablero); Pichler blindar gates antes que añadir cajas.</li>
+        <li>Estatus del User Story Map: ¿paso propio o salida del Tablero? Se resolvió como sección "Primer slice" del Tablero.</li>
+        <li>Cuándo empieza la validación de campo: Ries la quiere transversal desde el Prompt 0; Pichler exige coherencia estratégica antes de experimentar.</li>
+      </ul></article>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-top:0">
+    <span class="badge">Change-set aplicado · v3.0</span>
+    <h2>De 6 a 8 entregables (presupuesto: solo +2)</h2>
+    <div class="table">
+      <table>
+        <thead><tr><th>#</th><th>Entregable</th><th>Estado</th><th>Cambio principal</th></tr></thead>
+        <tbody>
+          <tr><td>0</td><td>Arranque (Prompt 0)</td><td>reescrito</td><td>Pregunta de evidencia real + tabla de supuestos por Deseabilidad/Viabilidad/Factibilidad + leap-of-faith; modo idea separa problema de solución.</td></tr>
+          <tr><td>1</td><td>Matriz Es / No es / Hace / No hace</td><td>se mantiene</td><td>Acotador de alcance; alimentado por el problema separado de la solución.</td></tr>
+          <tr><td>2</td><td>Brief de idea</td><td>reescrito</td><td>"Propuesta de valor" → "Hipótesis de valor (provisional)"; la visión manda; supuestos van al Tablero.</td></tr>
+          <tr><td>3</td><td>Product Vision Board</td><td>reescrito</td><td>Visión agnóstica (prueba de fuego); Necesidad ≠ Producto; metas medibles; trazabilidad.</td></tr>
+          <tr><td>4</td><td>Customer Journey Map</td><td>reescrito</td><td>Fuentes de evidencia; <span class="code">[HIPÓTESIS]</span> + microprueba; nombra capacidades para el VPC.</td></tr>
+          <tr><td>5</td><td class="new">Value Proposition Canvas</td><td class="new">NUEVO</td><td>Diseña el fit problema-solución (jobs/pains/gains ↔ relievers/creators) con trazabilidad y grado de fit declarado.</td></tr>
+          <tr><td>6</td><td class="new">Tablero de Supuestos + Experimentos + Primer Slice</td><td class="new">NUEVO</td><td>Cobra todos los supuestos por riesgo; experimentos baratos con criterio pivotar/perseverar; absorbe el User Story Map como walking skeleton.</td></tr>
+          <tr><td>7</td><td>Service Blueprint</td><td>reescrito</td><td>Acotado al primer slice, no al producto completo.</td></tr>
+          <tr><td>8</td><td>Business Model Canvas</td><td>reescrito</td><td>Cada bloque [VALIDADO]/[SUPUESTO]/[REFUTADO]; veredicto PSF vs PMF; "market fit NO DEMOSTRADO" sin datos; recomendación accionable.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout"><strong>Marco del deck tejido en v3:</strong> Señal vs Ruido (importancia/satisfacción en el arranque) · enamórate del problema (modo idea separa problema de solución) · feedback temprano y boceto descartable (criterio pivotar/perseverar) · falla rápido → aprende barato → construye excelente (Tablero + "experimento de esta semana") · prototipo = puente dolor→alivio (VPC + slice) · "la tecnología imprime velocidad; el método asegura el destino" (cierre).</div>
+  </section>
+
+  <section class="wrap" style="padding-top:0">
+    <span class="badge">Veredicto</span>
+    <div class="verdict">
+      <h3>APROBADO para v3.0 — alta confianza</h3>
+      <p style="color:#D7E0EF">El change-set resuelve los tres consensos críticos (documentaba mejor de lo que validaba; veredicto de market fit sin sustento; supuestos que nunca se cobraban) dentro del presupuesto anti-inflación: solo 2 pasos nuevos (Value Proposition Canvas + Tablero de Supuestos), pasando de 6 a 8 entregables. El User Story Map de Patton se absorbe como "Primer slice" del Tablero (slice por riesgo = experimento más barato), evitando un 9.º paso. El Service Blueprint se acota al slice. Se respetan las reglas de marca: sin precios (con la aclaración "sin precios ≠ sin métricas"), tool-agnostic, ES+EN, evidencia sobre opinión, 4 formatos + Protocolo MetodologIA + gates. Riesgo residual: VPC y Vision Board exigen disciplina para no duplicarse — mitigado por la regla de trazabilidad y la división de trabajo explícita.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div><strong>MetodologIA · Comité de Discovery · Revisión y debate</strong><br>Método primero, (Gen)IA después. Revisión por comité de expertos personificados (Pichler · Osterwalder · Patton · Ries). Companion del Workbook de Discovery de Producto v3.0.</div>
+</footer>
+<div style="text-align:center;font-family:system-ui,sans-serif;font-size:.75rem;color:#8a8676;padding:1.1rem;border-top:1px solid rgba(0,0,0,.08)">Comité de Discovery · Revisión v1.0 · 2026-06-03 · MetodologIA · <a href="workbook.html" style="color:#B8860B;text-decoration:none">Ir al Workbook ↗</a></div>
+</body>
+</html>
