@@ -70,9 +70,12 @@ html.dark .en-document,html[data-theme="dark"] .en-document{background:#071A33;c
   <div class="sidebar-links">
     <a href="#cover" data-label="Inicio" aria-label="Inicio"><i data-lucide="home"></i></a>
     <a href="#que-es" data-label="Qué es" aria-label="Qué es"><i data-lucide="info"></i></a>
+    <a href="#como-funciona" data-label="Cómo funciona" aria-label="Cómo funciona"><i data-lucide="workflow"></i></a>
     <a href="#entregables" data-label="Entregables" aria-label="Entregables"><i data-lucide="list-checks"></i></a>
     <a href="#activos" data-label="Activos" aria-label="Activos del set"><i data-lucide="layers"></i></a>
     <a href="#vivir" data-label="Vivirlo" aria-label="Cómo vivirlo"><i data-lucide="folder-git-2"></i></a>
+    <a href="#resultados" data-label="Resultados" aria-label="Resultados esperados"><i data-lucide="target"></i></a>
+    <a href="#faq" data-label="FAQ" aria-label="Preguntas frecuentes"><i data-lucide="help-circle"></i></a>
     <a href="#marca" data-label="Marca" aria-label="Reglas de marca"><i data-lucide="shield-check"></i></a>
     <a href="#cierre" data-label="Cierre" aria-label="Cierre"><i data-lucide="rocket"></i></a>
   </div>
@@ -84,17 +87,26 @@ html.dark .en-document,html[data-theme="dark"] .en-document{background:#071A33;c
 </nav>
 <script>
 window.__bilingualNav={
-  es:[['#cover','Inicio'],['#que-es','Qué es'],['#entregables','Entregables'],['#activos','Activos'],['#vivir','Vivirlo'],['#marca','Marca'],['#cierre','Cierre']],
-  en:[['#en-cover','Start'],['#en-what','What'],['#en-deliverables','Deliverables'],['#en-assets','Assets'],['#en-live','Live it'],['#en-brand','Brand'],['#en-close','Close']]
+  es:[['#cover','Inicio'],['#que-es','Qué es'],['#como-funciona','Cómo funciona'],['#entregables','Entregables'],['#activos','Activos'],['#vivir','Vivirlo'],['#resultados','Resultados'],['#faq','FAQ'],['#marca','Marca'],['#cierre','Cierre']],
+  en:[['#en-cover','Start'],['#en-what','What'],['#en-how','How it works'],['#en-deliverables','Deliverables'],['#en-assets','Assets'],['#en-live','Live it'],['#en-results','Results'],['#en-faq','FAQ'],['#en-brand','Brand'],['#en-close','Close']]
 };
 </script>
 <main class="localized-en en-document" id="en-cover">
   <section class="en-hero"><div class="en-section" style="padding-top:0;padding-bottom:0"><span class="en-kicker">Set overview · dossier</span><h1>Discovery de Producto, end to end</h1><p class="en-lead">This dossier is the map of the whole set: a guided workshop to conduct a digital product discovery with AI, whether you start from a blank page or from an idea. The promise is not "more documents": it is to <strong>decide with evidence whether there is market fit</strong> instead of building blind. <strong>Signal over noise</strong>: the seductive lie is building without validating — that is designing your own failure. Fall in love with the problem; the solution is just a vehicle. Method first, (Gen)AI later.</p></div></section>
   <section class="en-section" id="en-what"><span class="en-kicker">What it is · for whom</span><h2>A guided workshop, not a template pile</h2><div class="en-grid-2"><article class="en-card"><h3>What it is</h3><p>A guided workshop to run a product discovery with your AI assistant. You sketch to make ideas visible and evaluable, separate generation from judgment, and chain eight deliverables into one decision.</p></article><article class="en-card"><h3>For whom</h3><p>Founders, product people, designers, engineers and teams who want to validate before building — even if they have never led a discovery. No prior method required: the AI interviews and guides you.</p></article><article class="en-card"><h3>What it solves</h3><p>It turns a hunch into a tested decision: is there problem-solution fit and a path to product-market fit? Fail fast, learn cheap, build excellent with market certainty.</p></article><article class="en-card"><h3>How it feels</h3><p>The prototype is the bridge from friction to relief; the early sketch is valuable precisely because it is disposable. Technology sets the speed; the method secures the destination.</p></article></div></section>
-  <section class="en-section" id="en-deliverables"><span class="en-kicker">The journey</span><h2>Eight chained deliverables</h2><div class="en-table"><table><thead><tr><th>#</th><th>Deliverable</th><th>Purpose</th></tr></thead><tbody><tr><td>0</td><td>Kickoff</td><td>Frame problem or idea + assumptions by risk (blank page / existing idea).</td></tr><tr><td>1</td><td>Is / Is-not / Does / Does-not matrix</td><td>Scope and anti-scope before anything else.</td></tr><tr><td>2</td><td>Idea brief</td><td>One-pager with a provisional value hypothesis.</td></tr><tr><td>3</td><td>Product Vision Board</td><td>Agnostic vision + traceability Need → Product → Goal.</td></tr><tr><td>4</td><td>Customer Journey Map</td><td>Observed vs [HYPOTHESIS] + micro-test.</td></tr><tr><td>5</td><td>Value Proposition Canvas</td><td>Problem-solution fit.</td></tr><tr><td>6</td><td>Assumptions board + Experiments + First slice</td><td>Riskiest assumptions, cheap tests, walking skeleton.</td></tr><tr><td>7</td><td>Service Blueprint</td><td>Scoped to the first slice.</td></tr><tr><td>8</td><td>Business Model Canvas</td><td>Honest PSF vs PMF verdict.</td></tr></tbody></table></div></section>
+  <section class="en-section" id="en-how"><span class="en-kicker">How it works</span><h2>The AI interviews you — you decide</h2><p class="en-lead">You never face a blank page alone. Your AI assistant interviews you one question at a time, separates generating from judging, and turns each answer into a deliverable that feeds the next one. The method is the protagonist; the (Gen)AI is the engine. Method first, (Gen)AI later.</p>
+    <div class="en-grid"><article class="en-card"><h3>1 · The AI interviews</h3><p>It asks a single focused question, waits, and reflects what it heard back to you. No long forms — a guided conversation that surfaces what you actually know vs. what you are assuming.</p></article><article class="en-card"><h3>2 · Four prompt formats</h3><p>Every prompt ships in four shapes so you use the one that fits: <strong>natural language</strong>, <strong>parameters</strong>, <strong>SPEC method</strong>, and <strong>System/User pair</strong>. Same intent, different ergonomics.</p></article><article class="en-card"><h3>3 · Confirmation gates</h3><p>Before moving on, the AI pauses at a gate: it summarizes, marks every unverified claim as [ASSUMPTION], and asks you to confirm. Nothing advances on autopilot.</p></article><article class="en-card"><h3>4 · The project repo</h3><p>Each deliverable is written into your project repository — versioned, reviewable, reusable. Discovery lives where the product will be built, not in a throwaway folder.</p></article></div>
+    <div class="en-grid-2" style="margin-top:1rem"><article class="en-card"><h3>The MetodologIA Protocol</h3><p><strong>Interpret &gt; Plan &gt; Execute.</strong> The AI restates the goal, proposes a plan, and only then produces the artifact. You stay in the loop at each transition. Generation and judgment are kept apart on purpose so an early sketch can be thrown away without ego.</p></article><article class="en-card"><h3>The SPEC method</h3><p>A compact way to brief any step: <strong>S</strong>ituation, <strong>P</strong>urpose, <strong>E</strong>xpectations, <strong>C</strong>onstraints. It makes the prompt explicit and the output auditable — evidence over opinion.</p></article></div>
+  </section>
+  <section class="en-section" id="en-deliverables"><span class="en-kicker">The journey</span><h2>Eight chained deliverables</h2>
+    <p class="en-lead">It is not a checklist — it is a decision chain. Vision guides strategy and strategy guides the rest; if a step contradicts the one above, you fix upward. Success is not "eight documents": it is one actionable decision, a first slice to validate, and your biggest risk paired with its next test.</p><div class="en-table"><table><thead><tr><th>#</th><th>Deliverable</th><th>What it produces</th><th>Decision it enables</th></tr></thead><tbody><tr><td>0</td><td>Kickoff</td><td>Problem or idea framed + assumptions sorted by risk (blank page / existing idea).</td><td>Whether to enter discovery and where the real risk sits.</td></tr><tr><td>1</td><td>Is / Is-not / Does / Does-not matrix</td><td>Four quadrants of scope and anti-scope.</td><td>What is in and out before any work begins.</td></tr><tr><td>2</td><td>Idea brief</td><td>One-pager with a provisional value hypothesis and "why now".</td><td>Whether the bet is worth testing at all.</td></tr><tr><td>3</td><td>Product Vision Board</td><td>Agnostic vision + traceability Need → Product → Goal.</td><td>Whether the solution still serves the original need.</td></tr><tr><td>4</td><td>Customer Journey Map</td><td>The journey, separating observed from [HYPOTHESIS] + a micro-test.</td><td>Which moment of pain to attack first.</td></tr><tr><td>5</td><td>Value Proposition Canvas</td><td>Designed problem-solution fit (jobs, pains, gains).</td><td>Whether the value proposition actually relieves the pain.</td></tr><tr><td>6</td><td>Assumptions board + Experiments + First slice</td><td>Riskiest assumptions ranked, cheap tests, a walking skeleton.</td><td>What to test next and what to build first.</td></tr><tr><td>7</td><td>Service Blueprint</td><td>How the slice is delivered (scoped to the first slice, not the whole product).</td><td>Whether you can actually deliver the slice end to end.</td></tr><tr><td>8</td><td>Business Model Canvas</td><td>Nine blocks + an honest verdict distinguishing PSF from PMF.</td><td>Continue, pivot or stop — with evidence, not opinion.</td></tr></tbody></table></div></section>
   <section class="en-section" id="en-assets"><span class="en-kicker">Set assets</span><h2>Seven companions, one program</h2><div class="en-grid"><article class="en-card"><h3>Masterclass</h3><p>The concepts: signal vs noise, problem love, fail fast. Why discovery before code.</p></article><article class="en-card"><h3>Workbook</h3><p>The hands-on journey: eight deliverables, one question at a time, prompts in four formats.</p></article><article class="en-card"><h3>Runbook</h3><p>Step-by-step operation: how to run each step with your AI assistant and the repo.</p></article><article class="en-card"><h3>Playbook</h3><p>Reusable patterns, gates and decision rules to run it again and scale it.</p></article><article class="en-card"><h3>Intro deck</h3><p>"From sketches to prototypes, with AI" — the narrative to open the session.</p></article><article class="en-card"><h3>Reference</h3><p>Glossary, prompt formats and the MetodologIA protocol (Interpret &gt; Plan &gt; Execute).</p></article><article class="en-card"><h3>Committee · Review</h3><p>Critical review of each deliverable: evidence over opinion, assumptions surfaced.</p></article></div></section>
   <section class="en-section" id="en-live"><span class="en-kicker">Live the workshop</span><h2>Work inside your project repo</h2><p class="en-lead">The discovery is a project station — versioned, reviewable, reusable. Recommended starter: <strong>Pristino Alfa</strong> (<a href="https://github.com/JaviMontano/jm-adk-alfa" target="_blank" rel="noopener">github.com/JaviMontano/jm-adk-alfa</a>). Recommended accelerator GPTs: Discovery Assistant, Prompting, Research Blueprint. Your AI context file depends on your stack and tool (README, AGENTS, CLAUDE or whatever your team defines).</p></section>
-  <section class="en-section" id="en-brand"><span class="en-kicker">Brand rules</span><h2>How this set behaves</h2><div class="en-grid-2"><article class="en-card"><h3>Tool-agnostic</h3><p>It never prescribes a vendor: it says "your AI assistant". Works with whatever your team uses.</p></article><article class="en-card"><h3>Evidence over opinion</h3><p>Anything unverified is marked [ASSUMPTION]; sensitive data uses placeholders. Human decision always.</p></article></div></section>
+  <section class="en-section" id="en-results"><span class="en-kicker">Expected results</span><h2>What you walk out with</h2><p class="en-lead">The outcome is not a folder of canvases. It is a decision you can act on, a first slice ready to validate, and the next experiment that will move your riskiest assumption. Fail fast, learn cheap, build excellent — with market certainty instead of wishful thinking.</p>
+    <div class="en-grid"><article class="en-card"><h3>An actionable decision</h3><p>Continue, pivot or stop — argued with evidence. A "go" is only legitimate when your riskiest assumptions were tested against reality, not against other documents.</p></article><article class="en-card"><h3>A first slice</h3><p>A walking skeleton: the smallest end-to-end path that lets a real user experience the value and lets you learn from it.</p></article><article class="en-card"><h3>Your next experiment</h3><p>The single test that most reduces uncertainty, with a clear success criterion. The prototype is the bridge from friction to relief.</p></article></div>
+    <div class="en-table" style="margin-top:1rem"><table><thead><tr><th>You start with</th><th>You leave with</th></tr></thead><tbody><tr><td>A hunch or a half-formed idea.</td><td>A tested value hypothesis with explicit assumptions.</td></tr><tr><td>"I think users want this."</td><td>Observed evidence vs. [ASSUMPTION], clearly separated.</td></tr><tr><td>A long, vague backlog.</td><td>One first slice and one prioritized experiment.</td></tr><tr><td>Pressure to build now.</td><td>An evidence-based PSF vs. PMF verdict.</td></tr></tbody></table></div></section>
+  <section class="en-section" id="en-faq"><span class="en-kicker">FAQ</span><h2>Honest answers before you start</h2><div class="en-grid-2"><article class="en-card"><h3>Do I need to code?</h3><p>No. The set is tool-agnostic and discovery-first. You sketch, decide and document with your AI assistant; building comes later, only if the evidence says go.</p></article><article class="en-card"><h3>How long does it take?</h3><p>It depends on your idea's maturity and how much evidence you already hold. The unit is "one question at a time", so you advance at your own pace — a focused session per deliverable is a reasonable rhythm.</p></article><article class="en-card"><h3>What if I have no idea yet?</h3><p>Perfect starting point. Kickoff is bimodal: the "blank page" path falls in love with a problem first, then lets a solution emerge — instead of marrying a feature too early.</p></article><article class="en-card"><h3>What if I have no users yet?</h3><p>You mark every belief as [ASSUMPTION] and design cheap micro-tests to meet real people. The journey is built precisely to replace opinion with the first scraps of evidence.</p></article><article class="en-card"><h3>Which AI tool should I use?</h3><p>The one your team already uses. The set never prescribes a vendor — it says "your AI assistant". Claude Code is just one possible environment in the Pristino Alfa starter list.</p></article><article class="en-card"><h3>Do I need a team?</h3><p>No. It works solo or in a group. In a group, the confirmation gates and the [ASSUMPTION] discipline keep everyone honest and aligned on evidence.</p></article><article class="en-card"><h3>Is this a guaranteed "yes"?</h3><p>No — and that is the point. A well-run discovery that ends in "stop" saved you months of building the wrong thing. Failing cheap is a win.</p></article><article class="en-card"><h3>What do I do with the output?</h3><p>Open the Workbook, run the eight deliverables, then act on the decision: validate the first slice or run the next experiment. The Runbook and Playbook help you operate and repeat it.</p></article></div></section>
+  <section class="en-section" id="en-brand"><span class="en-kicker">Brand rules</span><h2>How this set behaves</h2><div class="en-grid"><article class="en-card"><h3>Tool-agnostic</h3><p>It never prescribes a vendor: it says "your AI assistant". Works with whatever your team uses. Claude Code is only one option in the Pristino Alfa list.</p></article><article class="en-card"><h3>Evidence over opinion</h3><p>Anything unverified is marked [ASSUMPTION]; sensitive data uses placeholders. Human decision always.</p></article><article class="en-card"><h3>Privacy by default</h3><p>User PII and confidential business data never enter a group exercise unprotected.</p></article><article class="en-card"><h3>Method first, (Gen)AI later</h3><p>AI sets the speed; the method secures the destination. The motto governs every step of the set.</p></article></div></section>
   <section class="en-section" id="en-close"><span class="en-kicker">Close</span><h2>Open the Workbook</h2><p class="en-lead">This dossier is the map; the territory is the workshop. Open the <a href="workbook.html">Workbook</a> and start with Prompt 0 · Kickoff. Build the bridge from friction to relief — and remember: method first, (Gen)AI later.</p></section>
 </main>
 <header class="cover" id="cover">
@@ -119,23 +131,39 @@ window.__bilingualNav={
     <div class="callout" style="margin-top:1.2rem"><strong>Señal vs ruido.</strong> Construir sin validar es diseñar tu fracaso. Antes de enamorarte de una solución, confirma que el problema le duele a alguien y que su alternativa actual no le basta. El feedback temprano existe para que el boceto se pueda descartar sin costo.</div>
   </section>
 
+  <section class="wrap" id="como-funciona">
+    <span class="badge">Cómo funciona</span>
+    <h2>La IA te entrevista — tú decides</h2>
+    <p class="lead">Nunca enfrentas la página en blanco a solas. Tu asistente de IA te entrevista una pregunta a la vez, separa generar de enjuiciar y convierte cada respuesta en un entregable que alimenta el siguiente. El método es el protagonista; la (Gen)IA es el motor. Método primero, (Gen)IA después.</p>
+    <div class="grid-3">
+      <article class="card"><h3>1 · La IA entrevista</h3><p>Pregunta una sola cosa enfocada, espera y te devuelve lo que entendió. Sin formularios largos: una conversación guiada que separa lo que sabes de lo que estás suponiendo.</p></article>
+      <article class="card"><h3>2 · Cuatro formatos de prompt</h3><p>Cada prompt viene en cuatro formas para que uses la que te sirva: <strong>lenguaje natural</strong>, <strong>parámetros</strong>, <strong>método SPEC</strong> y <strong>dupla System/User</strong>. Misma intención, distinta ergonomía.</p></article>
+      <article class="card"><h3>3 · Gates de confirmación</h3><p>Antes de avanzar, la IA se detiene en un gate: resume, marca lo no verificado como [SUPUESTO] y te pide confirmar. Nada avanza en piloto automático.</p></article>
+    </div>
+    <div class="grid" style="margin-top:1rem">
+      <article class="card"><h3>4 · El repo del proyecto</h3><p>Cada entregable se escribe en el repositorio de tu proyecto —versionado, revisable, reutilizable—. El discovery vive donde se construirá el producto, no en una carpeta desechable.</p></article>
+      <article class="card"><h3>El método SPEC</h3><p>Una forma compacta de briefear cualquier paso: <strong>S</strong>ituación, <strong>P</strong>ropósito, <strong>E</strong>xpectativas, <strong>C</strong>ondiciones. Hace el prompt explícito y el resultado auditable: evidencia sobre opinión.</p></article>
+    </div>
+    <div class="callout" style="margin-top:1.2rem"><strong>Protocolo MetodologIA · Interpreta &gt; Planifica &gt; Ejecuta.</strong> La IA replantea el objetivo, propone un plan y solo entonces produce el artefacto. Tú quedas en el lazo en cada transición. Generar y enjuiciar se mantienen separados a propósito, para que un boceto temprano se pueda descartar sin ego.</div>
+  </section>
+
   <section class="wrap" id="entregables">
     <span class="badge">El recorrido</span>
     <h2>Ocho entregables encadenados, una decisión</h2>
     <p class="lead">No es un checklist: es una cadena de decisión. La visión guía la estrategia y la estrategia guía el resto; si un paso contradice al de arriba, se corrige hacia arriba. El éxito no es "tener ocho documentos": es una decisión accionable, un primer slice para validar y tu mayor riesgo con su próxima prueba. Los prompts vienen en cuatro formatos (natural, parámetros, SPEC y dupla System/User), con el método SPEC y el Protocolo MetodologIA (Interpreta &gt; Planifica &gt; Ejecuta) y gates de confirmación.</p>
     <div class="table">
       <table>
-        <thead><tr><th>#</th><th>Entregable</th><th>Para qué sirve</th></tr></thead>
+        <thead><tr><th>#</th><th>Entregable</th><th>Qué produce</th><th>Qué decisión habilita</th></tr></thead>
         <tbody>
-          <tr><td>0</td><td><strong>Arranque</strong></td><td>Enmarca el problema o la idea y clasifica supuestos por riesgo (bimodal: página en blanco / ya tengo idea).</td></tr>
-          <tr><td>1</td><td><strong>Matriz Es / No es / Hace / No hace</strong></td><td>Fija alcance y anti-alcance en cuatro cuadrantes antes que nada.</td></tr>
-          <tr><td>2</td><td><strong>Brief de idea</strong></td><td>One-pager con hipótesis de valor provisional, contexto y por qué ahora.</td></tr>
-          <tr><td>3</td><td><strong>Product Vision Board</strong></td><td>Visión agnóstica + trazabilidad Necesidad → Producto → Meta.</td></tr>
-          <tr><td>4</td><td><strong>Customer Journey Map</strong></td><td>Recorrido del usuario; distingue lo observado de lo [HIPÓTESIS] + microprueba.</td></tr>
-          <tr><td>5</td><td><strong>Value Proposition Canvas</strong></td><td>Diseña el fit problema-solución.</td></tr>
-          <tr><td>6</td><td><strong>Tablero de Supuestos + Experimentos + Primer Slice</strong></td><td>Prioriza el riesgo, diseña pruebas baratas y define el walking skeleton.</td></tr>
-          <tr><td>7</td><td><strong>Service Blueprint</strong></td><td>Cómo se entrega el slice (acotado al primer slice, no a todo el producto).</td></tr>
-          <tr><td>8</td><td><strong>Business Model Canvas</strong></td><td>Nueve bloques + veredicto honesto que distingue PSF de PMF.</td></tr>
+          <tr><td>0</td><td><strong>Arranque</strong></td><td>Enmarca el problema o la idea y clasifica supuestos por riesgo (bimodal: página en blanco / ya tengo idea).</td><td>Si entrar al discovery y dónde está el riesgo real.</td></tr>
+          <tr><td>1</td><td><strong>Matriz Es / No es / Hace / No hace</strong></td><td>Fija alcance y anti-alcance en cuatro cuadrantes antes que nada.</td><td>Qué entra y qué queda fuera antes de cualquier trabajo.</td></tr>
+          <tr><td>2</td><td><strong>Brief de idea</strong></td><td>One-pager con hipótesis de valor provisional, contexto y por qué ahora.</td><td>Si la apuesta vale la pena probarse siquiera.</td></tr>
+          <tr><td>3</td><td><strong>Product Vision Board</strong></td><td>Visión agnóstica + trazabilidad Necesidad → Producto → Meta.</td><td>Si la solución sigue sirviendo a la necesidad original.</td></tr>
+          <tr><td>4</td><td><strong>Customer Journey Map</strong></td><td>Recorrido del usuario; distingue lo observado de lo [HIPÓTESIS] + microprueba.</td><td>Qué momento de dolor atacar primero.</td></tr>
+          <tr><td>5</td><td><strong>Value Proposition Canvas</strong></td><td>Diseña el fit problema-solución (trabajos, dolores, alegrías).</td><td>Si la propuesta de valor de verdad alivia el dolor.</td></tr>
+          <tr><td>6</td><td><strong>Tablero de Supuestos + Experimentos + Primer Slice</strong></td><td>Prioriza el riesgo, diseña pruebas baratas y define el walking skeleton.</td><td>Qué probar enseguida y qué construir primero.</td></tr>
+          <tr><td>7</td><td><strong>Service Blueprint</strong></td><td>Cómo se entrega el slice (acotado al primer slice, no a todo el producto).</td><td>Si puedes entregar el slice de punta a punta.</td></tr>
+          <tr><td>8</td><td><strong>Business Model Canvas</strong></td><td>Nueve bloques + veredicto honesto que distingue PSF de PMF.</td><td>Continuar, pivotar o parar — con evidencia, no opinión.</td></tr>
         </tbody>
       </table>
     </div>
@@ -187,11 +215,48 @@ cd jm-adk-alfa
     </div>
   </section>
 
+  <section class="wrap" id="resultados">
+    <span class="badge">Resultados esperados</span>
+    <h2>Con qué sales del taller</h2>
+    <p class="lead">El resultado no es una carpeta de canvases. Es una decisión accionable, un primer slice listo para validar y el próximo experimento que moverá tu supuesto más riesgoso. Falla rápido, aprende barato, construye excelente —con certeza de mercado en vez de ilusión—.</p>
+    <div class="grid-3">
+      <article class="card"><h3>Una decisión accionable</h3><p>Continuar, pivotar o parar —argumentada con evidencia—. Un "go" solo es legítimo cuando tus supuestos más riesgosos se probaron contra la realidad, no contra otros documentos.</p></article>
+      <article class="card"><h3>Un primer slice</h3><p>Un walking skeleton: el camino mínimo de punta a punta que deja a un usuario real experimentar el valor y a ti aprender de ello.</p></article>
+      <article class="card"><h3>Tu próximo experimento</h3><p>La prueba que más reduce la incertidumbre, con criterio de éxito claro. El prototipo es el puente de la fricción al alivio.</p></article>
+    </div>
+    <div class="table" style="margin-top:1.2rem">
+      <table>
+        <thead><tr><th>Entras con</th><th>Sales con</th></tr></thead>
+        <tbody>
+          <tr><td>Una corazonada o una idea a medio formar.</td><td>Una hipótesis de valor probada, con supuestos explícitos.</td></tr>
+          <tr><td>"Creo que los usuarios quieren esto".</td><td>Evidencia observada vs. [SUPUESTO], claramente separadas.</td></tr>
+          <tr><td>Un backlog largo y difuso.</td><td>Un primer slice y un experimento priorizado.</td></tr>
+          <tr><td>Presión por construir ya.</td><td>Un veredicto PSF vs. PMF basado en evidencia.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="wrap" id="faq">
+    <span class="badge">Preguntas frecuentes</span>
+    <h2>Respuestas honestas antes de empezar</h2>
+    <div class="grid">
+      <article class="card"><h3>¿Necesito saber programar?</h3><p>No. El set es agnóstico de herramienta y discovery-first. Bocetas, decides y documentas con tu asistente de IA; construir viene después, solo si la evidencia dice go.</p></article>
+      <article class="card"><h3>¿Cuánto dura?</h3><p>Depende de la madurez de tu idea y de cuánta evidencia ya tengas. La unidad es "una pregunta a la vez", así avanzas a tu ritmo —una sesión enfocada por entregable es un buen pulso—.</p></article>
+      <article class="card"><h3>¿Y si todavía no tengo idea?</h3><p>Punto de partida perfecto. El Arranque es bimodal: la ruta "página en blanco" se enamora primero del problema y deja que la solución emerja —en vez de casarte con una feature demasiado pronto—.</p></article>
+      <article class="card"><h3>¿Y si no tengo usuarios?</h3><p>Marcas cada creencia como [SUPUESTO] y diseñas micropruebas baratas para conocer gente real. El recorrido existe justo para cambiar opinión por las primeras pizcas de evidencia.</p></article>
+      <article class="card"><h3>¿Qué herramienta de IA uso?</h3><p>La que tu equipo ya use. El set nunca prescribe un proveedor: dice "tu asistente de IA". Claude Code es solo una de las opciones de entorno en la lista de Pristino Alfa.</p></article>
+      <article class="card"><h3>¿Necesito un equipo?</h3><p>No. Funciona en solitario o en grupo. En grupo, los gates de confirmación y la disciplina de [SUPUESTO] mantienen a todos honestos y alineados sobre la evidencia.</p></article>
+      <article class="card"><h3>¿Es un "sí" garantizado?</h3><p>No —y ese es el punto—. Un discovery bien hecho que termina en "parar" te ahorró meses construyendo lo equivocado. Fallar barato es ganar.</p></article>
+      <article class="card"><h3>¿Qué hago con el resultado?</h3><p>Abre el Workbook, corre los ocho entregables y actúa sobre la decisión: valida el primer slice o corre el próximo experimento. El Runbook y el Playbook te ayudan a operar y repetir.</p></article>
+    </div>
+  </section>
+
   <section class="wrap" id="marca">
     <span class="badge">Reglas de marca</span>
     <h2>Cómo se comporta este set</h2>
     <div class="grid">
-      <article class="card"><h3>Agnóstico de herramienta</h3><p>Nunca prescribe un proveedor: dice "tu asistente de IA". Sirve con lo que tu equipo ya usa.</p></article>
+      <article class="card"><h3>Agnóstico de herramienta</h3><p>Nunca prescribe un proveedor: dice "tu asistente de IA". Sirve con lo que tu equipo ya usa. Claude Code es solo una opción de entorno en la lista de Pristino Alfa.</p></article>
       <article class="card"><h3>Evidencia sobre opinión</h3><p>Lo no verificado se marca [SUPUESTO]; los datos sensibles van como placeholder. Decisión humana siempre.</p></article>
       <article class="card"><h3>Privacidad por defecto</h3><p>PII de usuarios y datos confidenciales de negocio no entran a un ejercicio grupal sin protección.</p></article>
       <article class="card"><h3>Método primero, (Gen)IA después</h3><p>La IA imprime velocidad; el método asegura el destino. El lema gobierna cada paso del set.</p></article>
@@ -475,6 +540,6 @@ html[data-theme="dark"] :is(h1,h2,h3,h4,h5,strong,summary,label)[style*="color:#
 })();
 </script>
 
-<div class="docset-version" style="text-align:center;font-family:system-ui,sans-serif;font-size:.75rem;color:#8a8676;padding:1.1rem;border-top:1px solid rgba(0,0,0,.08)">Discovery de Producto · Dossier · v1.0 · actualizado 2026-06-03 · MetodologIA · <a href="index.html" style="color:#B8860B;text-decoration:none">Trabajar Amplificado ↑</a></div>
+<div class="docset-version" style="text-align:center;font-family:system-ui,sans-serif;font-size:.75rem;color:#8a8676;padding:1.1rem;border-top:1px solid rgba(0,0,0,.08)">Discovery de Producto · Dossier · v1.1 · actualizado 2026-06-03 · MetodologIA · <a href="index.html" style="color:#B8860B;text-decoration:none">Trabajar Amplificado ↑</a></div>
 </body>
 </html>

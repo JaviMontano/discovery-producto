@@ -72,6 +72,8 @@ html.dark .en-document,html[data-theme="dark"] .en-document{background:#071A33;c
     <a href="#repo" data-label="Repo" aria-label="Repo"><i data-lucide="folder-git-2"></i></a>
     <a href="#asistentes" data-label="Asistentes" aria-label="Asistentes"><i data-lucide="bot"></i></a>
     <a href="#pasos" data-label="Pasos" aria-label="Pasos"><i data-lucide="list-ordered"></i></a>
+    <a href="#ritmo" data-label="Ritmo" aria-label="Ritmo"><i data-lucide="timer"></i></a>
+    <a href="#errores" data-label="Errores" aria-label="Errores"><i data-lucide="triangle-alert"></i></a>
     <a href="#metodo" data-label="Método" aria-label="Método"><i data-lucide="git-branch"></i></a>
     <a href="#cierre" data-label="Cierre" aria-label="Cierre"><i data-lucide="check-circle-2"></i></a>
   </div>
@@ -83,8 +85,8 @@ html.dark .en-document,html[data-theme="dark"] .en-document{background:#071A33;c
 </nav>
 <script>
 window.__bilingualNav={
-  es:[['#cover','Inicio'],['#repo','Repo'],['#asistentes','Asistentes'],['#pasos','Pasos'],['#metodo','Método'],['#cierre','Cierre']],
-  en:[['#en-cover','Start'],['#en-repo','Repo'],['#en-assistants','Assistants'],['#en-steps','Steps'],['#en-method','Method'],['#en-close','Close']]
+  es:[['#cover','Inicio'],['#repo','Repo'],['#asistentes','Asistentes'],['#pasos','Pasos'],['#ritmo','Ritmo'],['#errores','Errores'],['#metodo','Método'],['#cierre','Cierre']],
+  en:[['#en-cover','Start'],['#en-repo','Repo'],['#en-assistants','Assistants'],['#en-steps','Steps'],['#en-rhythm','Rhythm'],['#en-mistakes','Mistakes'],['#en-method','Method'],['#en-close','Close']]
 };
 </script>
 <main class="localized-en en-document" id="en-cover">
@@ -94,7 +96,9 @@ cd jm-adk-alfa
 # Read the repo README to install and initialize per your environment</pre></section>
   <section class="en-section" id="en-assistants"><span class="en-kicker">Recommended assistants (optional)</span><h2>Accelerator GPTs</h2><p class="en-lead">Optional helpers to speed up specific moments. They do not replace the method or your AI assistant inside the repo; they support framing, prompting and research.</p><div class="en-grid"><article class="en-card"><h3>Discovery Assistant</h3><p>Companion for framing problems, hypotheses and deliverables. <a href="https://chatgpt.com/g/g-6a049929a4e48191a18152f842d6fec9-discovery-assistant" target="_blank" rel="noopener">Open</a></p></article><article class="en-card"><h3>Prompting</h3><p>Helps you write and refine prompts in the four formats. <a href="https://chatgpt.com/g/g-68f4434cf0348191a569cf526fa53654-prompting" target="_blank" rel="noopener">Open</a></p></article><article class="en-card"><h3>Research Blueprint</h3><p>Structures desk research and evidence gathering. <a href="https://chatgpt.com/g/g-69d59bec507c819197750fbbc1e74aae-research-blueprint" target="_blank" rel="noopener">Open</a></p></article></div></section>
   <section class="en-section" id="en-steps"><span class="en-kicker">Eight steps</span><h2>How to run each deliverable</h2><p class="en-lead">For every step: goal in one sentence, what the AI will ask you, the file it produces, and the gate that must be confirmed before continuing.</p><div class="en-table"><table><thead><tr><th>Step</th><th>What the AI will ask · File</th><th>Confirmation gate</th></tr></thead><tbody><tr><td><strong>0 · Kickoff</strong><br>Frame the problem (or idea) and classify assumptions by risk.</td><td>Starting mode, domains, evidence, importance/satisfaction (signal vs noise). No file yet (or notes inside the brief).</td><td>Framing in 4-6 lines + assumptions table with the leap-of-faith marked, confirmed by you.</td></tr><tr><td><strong>1 · Is/Is-not matrix</strong><br>Frame scope and anti-scope.</td><td>What it is, what it is not, what it does, what it does not.<br><code>matriz-es-no-es.md</code></td><td>The product boundary is explicit and confirmed.</td></tr><tr><td><strong>2 · Idea brief</strong><br>One-pager with the provisional value hypothesis.</td><td>Problem, user, value hypothesis, context, why now, key assumptions.<br><code>brief-de-idea.md</code></td><td>Fits one page, separates fact from assumption, confirmed.</td></tr><tr><td><strong>3 · Product Vision Board</strong><br>Agnostic vision with traceability.</td><td>Vision, target group, needs, product, measurable goals.<br><code>product-vision-board.md</code></td><td>Vision survives a pivot; traceability Need → Product → Goal confirmed.</td></tr><tr><td><strong>4 · Customer Journey Map</strong><br>The main user's journey.</td><td>Phases, actions, emotions, pains, opportunities; observed vs [HYPOTHESIS] + micro-test.</td><td>Distinguishes observed from assumption; a micro-test per hypothesis confirmed.</td></tr><tr><td><strong>5 · Value Proposition Canvas</strong><br>Problem-solution fit.</td><td>Jobs/pains/gains vs products/relievers/creators.<br><code>value-proposition-canvas.md</code></td><td>Each reliever/creator traces to a real pain/gain; unvalidated fit is [ASSUMPTION].</td></tr><tr><td><strong>6 · Assumptions + Experiments + First slice</strong><br>Prioritize and test the riskiest.</td><td>Risk per assumption, cheap experiments, walking skeleton.<br><code>supuestos-y-experimentos.md</code></td><td>Top-3 risks have cheap tests, metrics and a pivot/persevere rule, confirmed.</td></tr><tr><td><strong>7 · Service Blueprint</strong><br>Scoped to the first slice.</td><td>Physical evidence, frontstage, backstage, support, actors, systems.<br><code>service-blueprint.md</code></td><td>Covers the first slice, not the whole product, confirmed.</td></tr><tr><td><strong>8 · Business Model Canvas</strong><br>Honest verdict.</td><td>Nine blocks + PSF vs PMF verdict + recommendation.<br><code>business-model-canvas.md</code></td><td>Enables an actionable decision, distinguishing validated from assumed.</td></tr></tbody></table></div></section>
-  <section class="en-section" id="en-method"><span class="en-kicker">Method</span><h2>SPEC + MetodologIA Protocol</h2><p class="en-lead">Every prompt comes in four formats — natural, natural + parameters, SPEC (Situation/Request/Execution/Criteria) and a system/user pair. In all of them the AI applies the MetodologIA Protocol: <strong>Interpret &gt; Plan &gt; Execute</strong> — it restates what it understood and shows its plan before writing. It separates generation from judgment, never invents users, market or metrics, marks [ASSUMPTION] and treats sensitive data as [placeholder]. The full prompts in four formats live in the Workbook.</p></section>
+  <section class="en-section" id="en-rhythm"><span class="en-kicker">Rhythm and sessions</span><h2>How to break the run into sessions</h2><p class="en-lead">Don't run the eight deliverables in one sitting. Discovery pays off in short sessions with a gate at each close: the AI sets the speed, the method secures the destination. Every session ends with a confirmed artifact or an actionable question — never half-done.</p><div class="en-grid"><article class="en-card"><h3>Session 1 · Framing</h3><p>Steps 0-2 (Kickoff, Matrix, Brief). Where you decide if there's signal or just noise. Close with the brief confirmed and your leap-of-faith named.</p></article><article class="en-card"><h3>Session 2 · User and value</h3><p>Steps 3-5 (Vision Board, Journey, VPC). Where you separate observed from assumed. Close with the VPC and a list of [HYPOTHESIS] each with its micro-test.</p></article><article class="en-card"><h3>Session 3 · Risk and model</h3><p>Steps 6-8 (Assumptions, Blueprint, BMC). Where discovery becomes learning. Close with the prioritized board and the PSF/PMF verdict.</p></article></div><div class="en-card" style="margin-top:1rem;border-left:5px solid var(--gold,#FFD700)"><p><strong>Between sessions, execute.</strong> Value is not in finishing documents back to back, but in interleaving real tests. Ideally run at least one experiment from the board before closing the BMC, so the verdict rests on evidence and not on another document.</p></div></section>
+  <section class="en-section" id="en-mistakes"><span class="en-kicker">Common discovery mistakes</span><h2>What derails the run (and how to avoid it)</h2><p class="en-lead">Most discoveries fail not for lack of tools, but from falling in love with the solution before understanding the problem. These are the most frequent detours and their fix.</p><div class="en-table"><table><thead><tr><th>Mistake</th><th>How it looks</th><th>How to unblock</th></tr></thead><tbody><tr><td><strong>The seductive lie</strong></td><td>"The idea is obviously good, let's build now." You skip discovery or do it for show.</td><td>Treat your certainty as a hypothesis. If you can't name what would make it false, you don't understand it yet.</td></tr><tr><td><strong>Signal vs noise confusion</strong></td><td>You take a friendly comment as market validation.</td><td>Important + unsatisfied = signal. The rest is politeness. Go back to Step 0 and score it.</td></tr><tr><td><strong>Falling for the solution</strong></td><td>You start from the feature; the problem is bent to justify it.</td><td>Fall in love with the problem. The solution is the vehicle, not the destination.</td></tr><tr><td><strong>Mixing generate and judge</strong></td><td>You validate in the same reply the AI generates; you lose judgment.</td><td>Let the AI propose; you validate the evidence in a separate pass.</td></tr><tr><td><strong>Inventing users or metrics</strong></td><td>The document looks complete, but nothing was observed.</td><td>Everything unverified is [ASSUMPTION]. A map full of hypotheses is honest; one full of invented certainties is dangerous.</td></tr><tr><td><strong>Experiments that need building</strong></td><td>"To test it I need the finished product."</td><td>Find the cheapest test that disproves the assumption: interview, landing, Wizard of Oz, throwaway sketch.</td></tr><tr><td><strong>Deciding the rule after the data</strong></td><td>You read the result in your favor.</td><td>Fix the pivot/persevere rule in writing before running the test.</td></tr><tr><td><strong>Loose documents, no chain</strong></td><td>Eight deliverables that don't support each other.</td><td>If a step contradicts the one above, fix upward. Coherence is the real deliverable.</td></tr></tbody></table></div></section>
+  <section class="en-section" id="en-method"><span class="en-kicker">Method</span><h2>SPEC + MetodologIA Protocol</h2><p class="en-lead">Every prompt comes in four formats so you pick by comfort and tool. They don't change the result; they change how you ask. In all of them the AI applies the MetodologIA Protocol: <strong>Interpret &gt; Plan &gt; Execute</strong> — it restates what it understood and shows its plan before writing, so human control happens before the turn is spent.</p><div class="en-grid-2"><article class="en-card"><h3>1 · Natural</h3><p>Plain, conversational language. Ideal to start and for anyone new to working amplified.</p></article><article class="en-card"><h3>2 · Natural + parameters</h3><p>The same natural prompt, but with explicit variables (user, domain, constraints) to repeat with consistency.</p></article><article class="en-card"><h3>3 · SPEC</h3><p>Situation / Request / Execution / Criteria. The most rigorous format: no ambiguity about what to deliver and how "well done" is judged.</p></article><article class="en-card"><h3>4 · System/user pair</h3><p>A system message that sets role and rules, and a user message with the task. For environments that separate instruction from request.</p></article></div><p class="en-lead" style="margin-top:1rem">It separates generation from judgment, never invents users, market or metrics, marks [ASSUMPTION] and treats sensitive data as [placeholder]. A decision to continue is only legitimate if the riskiest assumptions were tested against reality. The full prompts in four formats live in the Workbook.</p></section>
   <section class="en-section" id="en-close"><span class="en-kicker">Close</span><h2>From the runbook to the next test</h2><p class="en-lead">Finishing the eight deliverables is not the goal: the goal is an actionable decision, a first slice to validate and your biggest risk with its next test. A decision to continue is only legitimate when your riskiest assumptions were tested against reality. <strong>This week:</strong> run row 1 of your assumptions board and book at least one conversation with a real user. For the full prompts in four formats, go to the Workbook. Fail fast, learn cheap, build excellent backed by market certainty.</p></section>
 </main>
 <header class="cover" id="cover">
@@ -137,14 +141,26 @@ cd jm-adk-alfa
     <h2>Cómo correr cada entregable</h2>
     <p class="lead">Para cada paso: el objetivo en una frase, qué te preguntará la IA, el archivo que produce y el gate que debes confirmar antes de seguir. Recuerda separar la generación del enjuiciamiento: deja a la IA proponer, y tú validas la evidencia y decides.</p>
 
+    <div class="callout" style="margin-bottom:1.1rem"><strong>La mentira seductora:</strong> «esta idea es obviamente buena, hay que construirla ya». Es la trampa más cara del discovery. Cada paso de abajo existe para convertir esa certeza prestada en evidencia o en [SUPUESTO] marcado. Recorre los ocho en orden; cada bloque trae <em>objetivo</em>, <em>precondición</em>, <em>qué te preguntará la IA</em>, el <em>archivo</em> que produce, <em>qué pegas / qué adjuntas</em>, la <em>forma esperada</em>, el <em>gate</em> de confirmación y un <em>si se atasca</em>.</div>
+
     <div class="step" id="paso-0">
       <div class="num">0</div>
       <div>
         <h3>Arranque</h3>
         <p><strong>Objetivo:</strong> enmarcar el problema (o la idea) y clasificar tus supuestos por riesgo antes de tocar cualquier entregable.</p>
-        <p class="hint"><strong>Qué te preguntará la IA:</strong> tu modo de arranque (página en blanco o ya tengo una idea), dominios que conoces, evidencia real disponible, y —para separar señal de ruido— qué tan importante es el problema (1-5) y qué tan satisfecho está quien lo sufre con su alternativa actual (1-5).</p>
+        <p class="hint"><strong>Precondición:</strong> ninguna. Es el punto cero. Solo necesitas el repo preparado (sección «Prepara el repo») y honestidad sobre qué sabes de verdad y qué estás suponiendo.</p>
+        <p class="hint"><strong>Qué te preguntará la IA:</strong></p>
+        <ul class="hint" style="margin-top:.2rem">
+          <li>Tu modo de arranque: «página en blanco» o «ya tengo una idea».</li>
+          <li>Dominios que conoces de primera mano y dónde tienes acceso a usuarios reales.</li>
+          <li>Evidencia real disponible hoy (conversaciones, datos, soporte, ventas) frente a lo que solo intuyes.</li>
+          <li>Para separar señal de ruido: qué tan importante es el problema para quien lo sufre (1-5) y qué tan satisfecho está con su alternativa actual (1-5). Importante + insatisfecho = señal; lo demás, probable ruido.</li>
+        </ul>
+        <p class="hint"><strong>Qué pegas / qué adjuntas:</strong> nada formal todavía. Si tienes notas, tickets de soporte, una transcripción o un mensaje de un usuario, pégalos como contexto crudo; la IA los usará para distinguir hecho de deseo.</p>
+        <p class="hint"><strong>Forma esperada del entregable:</strong> un encuadre en 4-6 líneas (problema, quién lo sufre, por qué importa, por qué ahora) + una tabla de supuestos clasificados por Deseabilidad / Viabilidad / Factibilidad, con el <em>leap-of-faith</em> (el supuesto que si falla tumba todo) marcado.</p>
         <p class="hint"><strong>Produce:</strong> aún no un entregable de carpeta; el encuadre y la tabla de supuestos quedan como notas o como base del <code>brief-de-idea.md</code>.</p>
-        <p class="hint"><strong>Gate:</strong> encuadre en 4-6 líneas + tabla de supuestos por Deseabilidad/Viabilidad/Factibilidad con el <em>leap-of-faith</em> marcado, confirmado por ti. Recién entonces pasa a la Matriz.</p>
+        <p class="hint"><strong>Gate:</strong> encuadre en 4-6 líneas + tabla de supuestos con el <em>leap-of-faith</em> marcado, confirmado por ti. Recién entonces pasa a la Matriz.</p>
+        <p class="hint"><strong>Si se atasca:</strong> (1) Si la IA empieza a inventar usuarios o cifras, frénala: «no inventes; marca como [SUPUESTO] todo lo que no te di». (2) Si no logras puntuar importancia/satisfacción, es la primera señal de que no conoces el problema —agenda una conversación antes de seguir, no rellenes con intuición.</p>
       </div>
     </div>
 
@@ -153,9 +169,19 @@ cd jm-adk-alfa
       <div>
         <h3>Matriz Es / No es / Hace / No hace</h3>
         <p><strong>Objetivo:</strong> enmarcar alcance y anti-alcance en cuatro cuadrantes antes que nada.</p>
-        <p class="hint"><strong>Qué te preguntará la IA:</strong> qué es y qué no es el producto, qué hace y qué no hace; te empuja a marcar fronteras explícitas, no aspiracionales.</p>
+        <p class="hint"><strong>Precondición:</strong> el encuadre del Paso 0 confirmado por ti. Sin un problema enmarcado, la matriz se llena de aspiraciones, no de fronteras.</p>
+        <p class="hint"><strong>Qué te preguntará la IA:</strong></p>
+        <ul class="hint" style="margin-top:.2rem">
+          <li>Qué <strong>es</strong> el producto en una frase (su naturaleza, no su sueño).</li>
+          <li>Qué <strong>no es</strong> —el anti-alcance que te ahorra meses de desvío.</li>
+          <li>Qué <strong>hace</strong> hoy en el primer alcance honesto.</li>
+          <li>Qué <strong>no hace</strong> a propósito (todavía o nunca).</li>
+        </ul>
+        <p class="hint"><strong>Qué pegas / qué adjuntas:</strong> el encuadre del Paso 0. Si tienes referencias de productos parecidos, nómbralas para que la IA te ayude a diferenciar «es» de «se parece a».</p>
+        <p class="hint"><strong>Forma esperada del entregable:</strong> una tabla de cuatro cuadrantes (Es / No es / Hace / No hace), con cada celda en frases cortas y sin verbos aspiracionales; lo dudoso marcado [SUPUESTO].</p>
         <p class="hint"><strong>Produce:</strong> <code>00_descubrimiento/matriz-es-no-es.md</code></p>
         <p class="hint"><strong>Gate:</strong> la frontera del producto es explícita y la confirmas. Lo no decidido queda como [SUPUESTO].</p>
+        <p class="hint"><strong>Si se atasca:</strong> (1) Si todo te parece «sí, también hace eso», el alcance está inflado: obliga a que cada «Hace» tenga un «No hace» equivalente. (2) Si confundes «No es» con «No hace», recuerda: «No es» es identidad (qué clase de cosa); «No hace» es función (qué tareas).</p>
       </div>
     </div>
 
@@ -163,10 +189,21 @@ cd jm-adk-alfa
       <div class="num">2</div>
       <div>
         <h3>Brief de idea</h3>
-        <p><strong>Objetivo:</strong> un one-pager con la hipótesis de valor provisional.</p>
-        <p class="hint"><strong>Qué te preguntará la IA:</strong> problema, usuario, hipótesis de valor, contexto, por qué ahora y supuestos clave. No juzga tu idea; te ayuda a ordenarla.</p>
+        <p><strong>Objetivo:</strong> un one-pager con la hipótesis de valor provisional —provisional porque aún no está validada, y el brief lo dice en voz alta.</p>
+        <p class="hint"><strong>Precondición:</strong> la matriz Es/No es confirmada. El brief hereda sus fronteras; si las contradice, corriges hacia arriba antes de seguir.</p>
+        <p class="hint"><strong>Qué te preguntará la IA:</strong></p>
+        <ul class="hint" style="margin-top:.2rem">
+          <li>El problema en una frase, desde la voz de quien lo sufre.</li>
+          <li>El usuario concreto (no «todos»; un segmento que puedas señalar).</li>
+          <li>La hipótesis de valor provisional: «creemos que [usuario] logrará [resultado] porque [mecanismo]».</li>
+          <li>Contexto y «por qué ahora» (qué cambió que hace urgente resolverlo).</li>
+          <li>Supuestos clave que sostienen la idea y que aún no probaste.</li>
+        </ul>
+        <p class="hint"><strong>Qué pegas / qué adjuntas:</strong> la matriz Es/No es y el encuadre del Paso 0. Cualquier evidencia cruda (citas de usuarios, datos) la separa de tu interpretación.</p>
+        <p class="hint"><strong>Forma esperada del entregable:</strong> un one-pager con secciones cortas (Problema · Usuario · Hipótesis de valor · Contexto/Por qué ahora · Supuestos clave), donde cada afirmación está etiquetada como hecho verificable o [SUPUESTO].</p>
         <p class="hint"><strong>Produce:</strong> <code>00_descubrimiento/brief-de-idea.md</code></p>
         <p class="hint"><strong>Gate:</strong> cabe en una página, separa hecho de supuesto y lo confirmas.</p>
+        <p class="hint"><strong>Si se atasca:</strong> (1) Si el brief crece a tres páginas, sobra solución y falta problema: recorta todo lo que describa <em>cómo</em> antes de demostrar el <em>qué</em>. (2) Si tu hipótesis de valor no se puede declarar falsa, no es hipótesis: reescríbela hasta que tenga un punto de quiebre observable.</p>
       </div>
     </div>
 
@@ -174,10 +211,21 @@ cd jm-adk-alfa
       <div class="num">3</div>
       <div>
         <h3>Product Vision Board</h3>
-        <p><strong>Objetivo:</strong> una visión agnóstica de la solución, con trazabilidad.</p>
-        <p class="hint"><strong>Qué te preguntará la IA:</strong> visión, grupo objetivo, necesidades, producto y metas medibles; te pide trazar Necesidad → Producto → Meta.</p>
+        <p><strong>Objetivo:</strong> una visión agnóstica de la solución, con trazabilidad —la visión apunta al cambio que quieres en el mundo, no a una feature concreta.</p>
+        <p class="hint"><strong>Precondición:</strong> el brief confirmado. La visión amplía el «por qué» del brief; deben sostenerse mutuamente.</p>
+        <p class="hint"><strong>Qué te preguntará la IA:</strong></p>
+        <ul class="hint" style="margin-top:.2rem">
+          <li>La visión: el estado del mundo que persigues, agnóstico de tecnología.</li>
+          <li>El grupo objetivo concreto al que sirves primero.</li>
+          <li>Las necesidades reales de ese grupo (no las features que imaginas).</li>
+          <li>El producto: las capacidades de alto nivel que cubren esas necesidades.</li>
+          <li>Metas de negocio medibles que dirían que la visión avanza.</li>
+        </ul>
+        <p class="hint"><strong>Qué pegas / qué adjuntas:</strong> el brief y la matriz. La IA debe trazar cada elemento del producto hasta una necesidad declarada.</p>
+        <p class="hint"><strong>Forma esperada del entregable:</strong> el board de cinco bloques (Visión · Grupo objetivo · Necesidades · Producto · Metas) más una tabla de trazabilidad explícita Necesidad → Producto → Meta, sin huérfanos en ninguna dirección.</p>
         <p class="hint"><strong>Produce:</strong> <code>01_vision-y-usuario/product-vision-board.md</code></p>
-        <p class="hint"><strong>Gate:</strong> la visión sobrevive a un pivote; la trazabilidad Necesidad → Producto → Meta queda confirmada.</p>
+        <p class="hint"><strong>Gate:</strong> la visión sobrevive a un pivote (si cambias la solución, la visión sigue en pie); la trazabilidad Necesidad → Producto → Meta queda confirmada.</p>
+        <p class="hint"><strong>Si se atasca:</strong> (1) Si tu visión menciona una tecnología o una pantalla, es una feature disfrazada: súbela un nivel hasta el cambio humano que persigues. (2) Si una capacidad del producto no traza a ninguna necesidad, o sobra la capacidad o falta nombrar la necesidad —no la dejes huérfana.</p>
       </div>
     </div>
 
@@ -185,10 +233,21 @@ cd jm-adk-alfa
       <div class="num">4</div>
       <div>
         <h3>Customer Journey Map</h3>
-        <p><strong>Objetivo:</strong> el recorrido del usuario principal, separando lo observado de la hipótesis.</p>
-        <p class="hint"><strong>Qué te preguntará la IA:</strong> fases, acciones, emociones, dolores, oportunidades y momentos de verdad; distingue lo observado de lo marcado [HIPÓTESIS] + microprueba.</p>
+        <p><strong>Objetivo:</strong> el recorrido del usuario principal, separando con disciplina lo que <em>observaste</em> de lo que <em>supones</em>.</p>
+        <p class="hint"><strong>Precondición:</strong> el Vision Board confirmado, con el grupo objetivo definido. Sin un usuario concreto no hay recorrido que mapear.</p>
+        <p class="hint"><strong>Qué te preguntará la IA:</strong></p>
+        <ul class="hint" style="margin-top:.2rem">
+          <li>Las fases del recorrido, de extremo a extremo.</li>
+          <li>Acciones del usuario en cada fase.</li>
+          <li>Emociones y dolores en cada momento.</li>
+          <li>Oportunidades y momentos de verdad (donde se gana o se pierde al usuario).</li>
+          <li>Para cada celda: ¿esto lo <strong>observaste</strong> o lo estás <strong>asumiendo</strong>? Lo asumido se marca [HIPÓTESIS] y pide una microprueba.</li>
+        </ul>
+        <p class="hint"><strong>Qué pegas / qué adjuntas:</strong> notas de campo, grabaciones, transcripciones o tickets reales. Cuanto más material crudo de usuarios, menos casillas quedarán como [HIPÓTESIS].</p>
+        <p class="hint"><strong>Forma esperada del entregable:</strong> una tabla por fases (Acciones · Emociones · Dolores · Oportunidades), cada celda etiquetada <em>observado</em> o <em>[HIPÓTESIS]</em>, y por cada hipótesis una microprueba concreta (a quién preguntar, qué medir).</p>
         <p class="hint"><strong>Produce:</strong> <code>01_vision-y-usuario/customer-journey-map.md</code></p>
         <p class="hint"><strong>Gate:</strong> distingue observado de supuesto y nombra una microprueba por cada hipótesis; lo confirmas.</p>
+        <p class="hint"><strong>Si se atasca:</strong> (1) Si casi todo el mapa queda en [HIPÓTESIS], es la verdad útil del paso: aún no conoces a tu usuario —prioriza las hipótesis que tocan tu <em>leap-of-faith</em> y pruébalas primero. (2) Si la IA «sabe» cómo se siente el usuario, recuérdale que las emociones se observan o se preguntan, no se deducen.</p>
       </div>
     </div>
 
@@ -196,10 +255,21 @@ cd jm-adk-alfa
       <div class="num">5</div>
       <div>
         <h3>Value Proposition Canvas</h3>
-        <p><strong>Objetivo:</strong> diseñar el fit problema-solución.</p>
-        <p class="hint"><strong>Qué te preguntará la IA:</strong> trabajos, dolores y alegrías del cliente frente a productos, aliviadores y creadores de valor.</p>
+        <p><strong>Objetivo:</strong> diseñar el fit problema-solución —encajar lo que ofreces con lo que el usuario de verdad necesita.</p>
+        <p class="hint"><strong>Precondición:</strong> el Journey Map confirmado. Los dolores y trabajos del canvas salen del recorrido observado, no de la imaginación.</p>
+        <p class="hint"><strong>Qué te preguntará la IA:</strong></p>
+        <ul class="hint" style="margin-top:.2rem">
+          <li>Trabajos del cliente (qué intenta lograr, funcional, social y emocional).</li>
+          <li>Dolores (qué le frustra, le frena o le da miedo).</li>
+          <li>Alegrías (qué resultado le encantaría obtener).</li>
+          <li>Tus productos/servicios frente a ese perfil.</li>
+          <li>Aliviadores de dolor y creadores de alegría, cada uno apuntando a un dolor/alegría real.</li>
+        </ul>
+        <p class="hint"><strong>Qué pegas / qué adjuntas:</strong> el Journey Map y el Vision Board. La IA debe importar los dolores observados, no inventar nuevos.</p>
+        <p class="hint"><strong>Forma esperada del entregable:</strong> el canvas en dos lados (perfil del cliente · mapa de valor) con líneas de trazabilidad: cada aliviador conectado a un dolor, cada creador a una alegría; el fit no demostrado etiquetado [SUPUESTO].</p>
         <p class="hint"><strong>Produce:</strong> <code>01_vision-y-usuario/value-proposition-canvas.md</code></p>
         <p class="hint"><strong>Gate:</strong> cada aliviador/creador traza a un dolor/alegría real; el fit no validado queda como [SUPUESTO].</p>
+        <p class="hint"><strong>Si se atasca:</strong> (1) Si tienes aliviadores que no resuelven ningún dolor del perfil, son features enamoradas de sí mismas: recórtalas o encuentra el dolor real. (2) Si todo encaja sospechosamente bien, probablemente moldeaste el perfil del cliente a tu solución —vuelve al Journey y verifica que los dolores existían antes de tu producto.</p>
       </div>
     </div>
 
@@ -207,10 +277,21 @@ cd jm-adk-alfa
       <div class="num">6</div>
       <div>
         <h3>Tablero de Supuestos + Experimentos + Primer Slice</h3>
-        <p><strong>Objetivo:</strong> priorizar supuestos por riesgo, convertir los más riesgosos en experimentos baratos y definir el primer slice.</p>
-        <p class="hint"><strong>Qué te preguntará la IA:</strong> riesgo de cada supuesto, qué experimento barato lo pone a prueba, métrica accionable, regla de pivotar/perseverar y cuál es el <em>walking skeleton</em>.</p>
+        <p><strong>Objetivo:</strong> priorizar supuestos por riesgo, convertir los más riesgosos en experimentos baratos y definir el primer slice. Aquí es donde el discovery deja de ser documento y se vuelve aprendizaje.</p>
+        <p class="hint"><strong>Precondición:</strong> el VPC confirmado y, sobre todo, el inventario de [SUPUESTO] acumulado en los pasos 0-5. Este tablero los cosecha todos.</p>
+        <p class="hint"><strong>Qué te preguntará la IA:</strong></p>
+        <ul class="hint" style="margin-top:.2rem">
+          <li>El riesgo de cada supuesto: ¿qué tan probable es que sea falso y qué tan caro sería descubrirlo tarde?</li>
+          <li>Qué experimento barato lo pone a prueba (sin construir el producto).</li>
+          <li>La métrica accionable que dirá si el supuesto se sostiene.</li>
+          <li>La regla de pivotar/perseverar, acordada <em>antes</em> de ver el resultado.</li>
+          <li>El <em>walking skeleton</em>: el primer slice mínimo que cruza el sistema de punta a punta.</li>
+        </ul>
+        <p class="hint"><strong>Qué pegas / qué adjuntas:</strong> todos los entregables previos, en especial las celdas [SUPUESTO] y [HIPÓTESIS]. La IA debe consolidarlas en una sola lista priorizada.</p>
+        <p class="hint"><strong>Forma esperada del entregable:</strong> una tabla priorizada (Supuesto · Riesgo · Experimento · Métrica · Regla pivotar/perseverar) ordenada por riesgo, más un párrafo que describe el primer slice / walking skeleton.</p>
         <p class="hint"><strong>Produce:</strong> <code>02_servicio-y-negocio/supuestos-y-experimentos.md</code></p>
         <p class="hint"><strong>Gate:</strong> el top-3 de riesgos tiene pruebas baratas, métricas y regla de decisión preacordada; lo confirmas. Falla rápido, aprende barato.</p>
+        <p class="hint"><strong>Si se atasca:</strong> (1) Si tus experimentos requieren construir el producto, no son experimentos: pregunta a la IA por la prueba más barata que descarte el supuesto (entrevista, landing, mago de Oz, prototipo descartable). (2) Si no logras escribir la regla de decisión antes de la prueba, es la señal de que vas a interpretar el dato a tu favor —fíjala ahora, por escrito.</p>
       </div>
     </div>
 
@@ -218,10 +299,21 @@ cd jm-adk-alfa
       <div class="num">7</div>
       <div>
         <h3>Service Blueprint (acotado al slice)</h3>
-        <p><strong>Objetivo:</strong> cómo se entrega el primer slice, no el producto entero.</p>
-        <p class="hint"><strong>Qué te preguntará la IA:</strong> evidencia física, frontstage, backstage, soporte, actores y sistemas que sostienen el slice.</p>
+        <p><strong>Objetivo:</strong> cómo se entrega el primer slice de punta a punta, no el producto entero.</p>
+        <p class="hint"><strong>Precondición:</strong> el primer slice / walking skeleton definido en el Paso 6. El blueprint hace operable ese slice y nada más.</p>
+        <p class="hint"><strong>Qué te preguntará la IA:</strong></p>
+        <ul class="hint" style="margin-top:.2rem">
+          <li>Evidencia física: qué ve y toca el usuario en el slice.</li>
+          <li>Frontstage: las acciones visibles del servicio.</li>
+          <li>Backstage: lo que ocurre tras bambalinas para sostenerlo.</li>
+          <li>Procesos de soporte que lo habilitan.</li>
+          <li>Actores y sistemas implicados, y dónde está cada línea de visibilidad.</li>
+        </ul>
+        <p class="hint"><strong>Qué pegas / qué adjuntas:</strong> la descripción del primer slice y el Journey Map. La IA debe acotar el blueprint exactamente al recorrido del slice.</p>
+        <p class="hint"><strong>Forma esperada del entregable:</strong> un blueprint por carriles (Evidencia física · Frontstage · Backstage · Soporte) alineado a los pasos del slice, con actores y sistemas anotados y las líneas de visibilidad marcadas.</p>
         <p class="hint"><strong>Produce:</strong> <code>02_servicio-y-negocio/service-blueprint.md</code></p>
         <p class="hint"><strong>Gate:</strong> cubre el primer slice y no se desborda al producto completo; lo confirmas.</p>
+        <p class="hint"><strong>Si se atasca:</strong> (1) Si el blueprint empieza a describir features que no están en el slice, recórtalas: cualquier paso que no sirva al walking skeleton es ruido aquí. (2) Si aparecen sistemas o actores que aún no existen, márcalos [SUPUESTO] y vuelven al tablero como riesgo a probar.</p>
       </div>
     </div>
 
@@ -229,22 +321,77 @@ cd jm-adk-alfa
       <div class="num">8</div>
       <div>
         <h3>Business Model Canvas</h3>
-        <p><strong>Objetivo:</strong> un veredicto honesto que distinga fit problema-solución (PSF) de fit producto-mercado (PMF).</p>
-        <p class="hint"><strong>Qué te preguntará la IA:</strong> los nueve bloques y, sobre todo, qué evidencia sostiene cada uno; te exige separar validado de asumido.</p>
+        <p><strong>Objetivo:</strong> un veredicto honesto que distinga fit problema-solución (PSF) de fit producto-mercado (PMF) y habilite una decisión.</p>
+        <p class="hint"><strong>Precondición:</strong> todos los entregables anteriores, y al menos la primera fila del tablero de supuestos ya probada contra la realidad. El BMC sin evidencia es ficción ordenada.</p>
+        <p class="hint"><strong>Qué te preguntará la IA:</strong></p>
+        <ul class="hint" style="margin-top:.2rem">
+          <li>Los nueve bloques (segmentos, propuesta de valor, canales, relación, ingresos, recursos, actividades, alianzas, costos).</li>
+          <li>Para cada bloque: ¿qué evidencia lo sostiene y cuál es solo supuesto?</li>
+          <li>El veredicto PSF vs PMF: ¿probaste que el problema vale la pena (PSF) o además que el mercado lo paga/adopta (PMF)?</li>
+          <li>La recomendación: avanzar, pivotar o parar, con su razón.</li>
+        </ul>
+        <p class="hint"><strong>Qué pegas / qué adjuntas:</strong> los ocho entregables previos y los resultados de los experimentos que ya corriste. La IA distingue bloques validados de bloques asumidos.</p>
+        <p class="hint"><strong>Forma esperada del entregable:</strong> los nueve bloques, cada celda marcada <em>validado</em> o <em>[SUPUESTO]</em>, un veredicto explícito PSF/PMF y una recomendación accionable de una línea.</p>
         <p class="hint"><strong>Produce:</strong> <code>02_servicio-y-negocio/business-model-canvas.md</code></p>
         <p class="hint"><strong>Gate:</strong> habilita una decisión accionable (avanzar, pivotar o parar), distinguiendo PSF de PMF y validado de [SUPUESTO].</p>
+        <p class="hint"><strong>Si se atasca:</strong> (1) Si casi todos los bloques quedan [SUPUESTO], el veredicto correcto no es «avanzar»: es «seguir validando» —y eso es un resultado valioso, no un fracaso. (2) Si declaras PMF sin un experimento de mercado, baja el listón a PSF: el PMF se prueba con adopción/pago real, no con un canvas bien dibujado.</p>
       </div>
     </div>
 
     <div class="callout" style="margin-top:.6rem"><strong>El prototipo es el puente</strong> de la fricción al alivio. Bocetea con la IA para hacer visible y poder evaluar; el boceto vale por ser descartable. La solución es el vehículo; enamórate del problema.</div>
+    <div class="callout" style="margin-top:.8rem"><strong>Recorrido como cadena de decisión.</strong> Los ocho pasos no son casillas independientes: cada gate alimenta al siguiente. Si en el Paso 5 descubres un dolor que el Paso 3 no contempló, no parchees el VPC —vuelve al Vision Board y corrige hacia arriba. La coherencia entre niveles es lo que separa un discovery sólido de ocho documentos sueltos.</div>
+  </section>
+
+  <section class="wrap" id="ritmo">
+    <span class="badge">Ritmo y sesiones</span>
+    <h2>Cómo trocear el recorrido en sesiones</h2>
+    <p class="lead">No corras los ocho entregables de una sentada. El discovery rinde mejor en sesiones cortas con un gate por cierre: la IA imprime velocidad, pero el método asegura el destino. Cada sesión termina con un artefacto confirmado o una pregunta accionable, nunca a medias.</p>
+    <div class="grid-3">
+      <article class="card"><h3>Sesión 1 · Encuadre</h3><p>Pasos 0-2 (Arranque, Matriz, Brief). Es donde decides si hay señal o solo ruido. Cierra con el brief confirmado y tu <em>leap-of-faith</em> identificado.</p></article>
+      <article class="card"><h3>Sesión 2 · Usuario y valor</h3><p>Pasos 3-5 (Vision Board, Journey, VPC). Aquí separas lo observado de lo asumido. Cierra con el VPC y una lista de [HIPÓTESIS] con su microprueba.</p></article>
+      <article class="card"><h3>Sesión 3 · Riesgo y modelo</h3><p>Pasos 6-8 (Supuestos, Blueprint, BMC). Aquí el discovery se vuelve aprendizaje. Cierra con el tablero priorizado y el veredicto PSF/PMF.</p></article>
+    </div>
+    <div class="callout" style="margin-top:1rem"><strong>Entre sesiones, ejecuta.</strong> El valor no está en completar documentos seguidos, sino en intercalar pruebas reales. Idealmente, corre al menos un experimento del tablero <em>antes</em> de cerrar el BMC, para que el veredicto se apoye en evidencia y no en otro documento.</div>
+    <div class="checklist">
+      <div class="check"><input type="checkbox"><div><strong>Una sesión, un foco.</strong> No saltes de paso por ansiedad; cada gate sin confirmar es deuda que pagas más caro adelante.</div></div>
+      <div class="check"><input type="checkbox"><div><strong>Máximo 5 preguntas por ronda, una a la vez.</strong> Si la IA te abruma, pídele que vuelva al ritmo de a una.</div></div>
+      <div class="check"><input type="checkbox"><div><strong>Versiona al cerrar.</strong> Guarda cada <code>.md</code> confirmado en el repo; el discovery es una estación reutilizable, no un chat efímero.</div></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="errores">
+    <span class="badge">Errores comunes del discovery</span>
+    <h2>Lo que descarrila el recorrido (y cómo evitarlo)</h2>
+    <p class="lead">La mayoría de discoveries no fallan por falta de herramientas, sino por enamorarse de la solución antes de entender el problema. Estos son los desvíos más frecuentes y su corrección.</p>
+    <div class="table">
+      <table>
+        <thead><tr><th>Error</th><th>Cómo se ve</th><th>Cómo desbloquear</th></tr></thead>
+        <tbody>
+          <tr><td><strong>La mentira seductora</strong></td><td>«La idea es obviamente buena, hay que construir ya». Saltas el discovery o lo haces de adorno.</td><td>Trata tu certeza como hipótesis. Si no puedes nombrar qué la haría falsa, aún no la entiendes.</td></tr>
+          <tr><td><strong>Confundir señal con ruido</strong></td><td>Tomas un comentario simpático como validación de mercado.</td><td>Importante + insatisfecho = señal. Lo demás es cortesía. Vuelve al Paso 0 y puntúa.</td></tr>
+          <tr><td><strong>Enamorarse de la solución</strong></td><td>Empiezas por la feature; el problema se moldea para justificarla.</td><td>Enamórate del problema. La solución es el vehículo, no el destino.</td></tr>
+          <tr><td><strong>Mezclar generar y enjuiciar</strong></td><td>Validas en la misma respuesta en que la IA genera; pierdes criterio.</td><td>Deja que la IA proponga; tú validas la evidencia en una pasada aparte.</td></tr>
+          <tr><td><strong>Inventar usuarios o métricas</strong></td><td>El documento se ve completo, pero nada se observó.</td><td>Todo lo no verificado va como [SUPUESTO]. Un mapa lleno de hipótesis es honesto; uno lleno de certezas inventadas, peligroso.</td></tr>
+          <tr><td><strong>Experimentos que exigen construir</strong></td><td>«Para probarlo necesito el producto terminado».</td><td>Busca la prueba más barata que descarte el supuesto: entrevista, landing, mago de Oz, boceto descartable.</td></tr>
+          <tr><td><strong>Decidir la regla después del dato</strong></td><td>Interpretas el resultado a tu favor.</td><td>Fija la regla de pivotar/perseverar por escrito antes de correr la prueba.</td></tr>
+          <tr><td><strong>Documentos sueltos sin cadena</strong></td><td>Ocho entregables que no se sostienen entre sí.</td><td>Si un paso contradice al de arriba, corrige hacia arriba. La coherencia es el entregable real.</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <section class="wrap" id="metodo">
     <span class="badge">El método debajo</span>
     <h2>SPEC + Protocolo MetodologIA</h2>
-    <p class="lead">Cada prompt del recorrido viene en <strong>cuatro formatos</strong> —natural, natural + parámetros, SPEC (Situación / Pedido / Ejecución / Criterio) y una dupla system/user. En todos, la IA aplica el <strong>Protocolo MetodologIA: Interpreta &gt; Planifica &gt; Ejecuta</strong> — reformula lo que entendió y muestra su plan antes de escribir.</p>
+    <p class="lead">Cada prompt del recorrido viene en <strong>cuatro formatos</strong> para que elijas según tu comodidad y tu herramienta. No cambian el resultado; cambian la forma de pedirlo. En todos, la IA aplica el <strong>Protocolo MetodologIA: Interpreta &gt; Planifica &gt; Ejecuta</strong> — reformula lo que entendió y muestra su plan antes de escribir, para que el control humano ocurra <em>antes</em> de gastar el turno.</p>
     <div class="grid">
-      <article class="card"><h3>Separa generación de enjuiciamiento</h3><p>La IA genera y estructura en rondas cortas (máx. 5 preguntas, una a la vez). Tú validas la evidencia, marcas qué es supuesto y decides. Confirmación humana antes de avanzar.</p></article>
+      <article class="card"><h3>1 · Natural</h3><p>Lenguaje corriente, conversacional. Ideal para arrancar y para quien recién empieza a trabajar amplificado.</p></article>
+      <article class="card"><h3>2 · Natural + parámetros</h3><p>El mismo prompt natural, pero con variables explícitas (usuario, dominio, restricciones) para repetir con consistencia.</p></article>
+      <article class="card"><h3>3 · SPEC</h3><p>Situación / Pedido / Ejecución / Criterio. El formato más riguroso: deja sin ambigüedad qué entregar y cómo se juzga «bien hecho».</p></article>
+      <article class="card"><h3>4 · Dupla system/user</h3><p>Un mensaje de sistema que fija el rol y las reglas, y un mensaje de usuario con la tarea. Para entornos donde separas instrucción de petición.</p></article>
+    </div>
+    <div class="grid" style="margin-top:1rem">
+      <article class="card"><h3>Separa generación de enjuiciamiento</h3><p>La IA genera y estructura en rondas cortas (máx. 5 preguntas, una a la vez). Tú validas la evidencia, marcas qué es supuesto y decides. Confirmación humana antes de avanzar. Generar y juzgar en el mismo respiro es como editar mientras escribes: apaga ambos.</p></article>
       <article class="card"><h3>Evidencia sobre opinión</h3><p>Nunca inventa usuarios, mercado ni métricas; lo no verificable se marca [SUPUESTO] y los datos sensibles como [placeholder]. Una decisión de continuar solo es legítima si los supuestos más riesgosos se probaron contra la realidad.</p></article>
     </div>
     <div class="callout" style="margin-top:1rem"><strong>Los prompts completos en los cuatro formatos viven en el Workbook</strong>, paso a paso (Prompt 0 a Prompt 8 + Prompt R del repo). Este runbook es el mapa de ejecución; el Workbook es el cuaderno con los prompts listos para copiar.</div>
@@ -527,6 +674,6 @@ html[data-theme="dark"] :is(h1,h2,h3,h4,h5,strong,summary,label)[style*="color:#
 })();
 </script>
 
-<div class="docset-version" style="text-align:center;font-family:system-ui,sans-serif;font-size:.75rem;color:#8a8676;padding:1.1rem;border-top:1px solid rgba(0,0,0,.08)">Discovery de Producto · Runbook · v1.0 · actualizado 2026-06-03 · MetodologIA · <a href="index.html" style="color:#B8860B;text-decoration:none">Trabajar Amplificado ↑</a></div>
+<div class="docset-version" style="text-align:center;font-family:system-ui,sans-serif;font-size:.75rem;color:#8a8676;padding:1.1rem;border-top:1px solid rgba(0,0,0,.08)">Discovery de Producto · Runbook · v1.1 · actualizado 2026-06-03 · MetodologIA · <a href="index.html" style="color:#B8860B;text-decoration:none">Trabajar Amplificado ↑</a></div>
 </body>
 </html>

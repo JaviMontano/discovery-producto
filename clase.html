@@ -69,10 +69,12 @@ html.dark .en-document,html[data-theme="dark"] .en-document{background:#071A33;c
   </div>
   <div class="sidebar-links">
     <a href="#cover" data-label="Inicio" aria-label="Inicio"><i data-lucide="home"></i></a>
-    <a href="#porque" data-label="Por qué" aria-label="Por qué"><i data-lucide="alert-triangle"></i></a>
-    <a href="#enfoque" data-label="Enfoque" aria-label="Enfoque"><i data-lucide="heart-handshake"></i></a>
+    <a href="#porque" data-label="El problema" aria-label="El problema"><i data-lucide="alert-triangle"></i></a>
+    <a href="#senal" data-label="Señal vs ruido" aria-label="Señal vs ruido"><i data-lucide="radio"></i></a>
+    <a href="#enfoque" data-label="Enamórate del problema" aria-label="Enamórate del problema"><i data-lucide="heart-handshake"></i></a>
     <a href="#produces" data-label="Qué produces" aria-label="Qué produces"><i data-lucide="layout-grid"></i></a>
     <a href="#como" data-label="Cómo funciona" aria-label="Cómo funciona"><i data-lucide="messages-square"></i></a>
+    <a href="#valor" data-label="Valor y supuestos" aria-label="Valor y supuestos"><i data-lucide="target"></i></a>
     <a href="#cierre" data-label="Cierre" aria-label="Cierre"><i data-lucide="rocket"></i></a>
   </div>
   <div class="sidebar-bottom">
@@ -83,17 +85,39 @@ html.dark .en-document,html[data-theme="dark"] .en-document{background:#071A33;c
 </nav>
 <script>
 window.__bilingualNav={
-  es:[['#cover','Inicio'],['#porque','Por qué'],['#enfoque','Enfoque'],['#produces','Qué produces'],['#como','Cómo funciona'],['#cierre','Cierre']],
-  en:[['#en-cover','Start'],['#en-why','Why'],['#en-approach','Approach'],['#en-produce','What you make'],['#en-how','How'],['#en-close','Close']]
+  es:[['#cover','Inicio'],['#porque','El problema'],['#senal','Señal vs ruido'],['#enfoque','Enamórate del problema'],['#produces','Qué produces'],['#como','Cómo funciona'],['#valor','Valor y supuestos'],['#cierre','Cierre']],
+  en:[['#en-cover','Start'],['#en-why','The problem'],['#en-signal','Signal vs noise'],['#en-approach','Love the problem'],['#en-produce','What you make'],['#en-how','How'],['#en-value','Value & assumptions'],['#en-close','Close']]
 };
 </script>
 <main class="localized-en en-document" id="en-cover">
-  <section class="en-hero"><div class="en-section" style="padding-top:0;padding-bottom:0"><span class="en-kicker">Opening deck · present live</span><h1>From sketches to prototypes: discover before you build</h1><p class="en-lead">A companion deck to open your product discovery live. One idea per slide. <strong>Signal over noise</strong>: fall in love with the problem, not the solution. Sketch with AI to make ideas visible and judgeable; get feedback early; fail fast, learn cheap, build excellent — backed by market certainty. Technology sets the speed; the method secures the destination. Method first, (Gen)AI later.</p></div></section>
-  <section class="en-section" id="en-why"><span class="en-kicker">Why this matters</span><h2>The seductive lie</h2><p class="en-lead">Building without validating is designing your own failure. The most expensive mistake is not a bad line of code — it is a beautiful product nobody needed. AI now lets us build faster than ever, which makes one question urgent: are we sure this is worth building at all?</p><div class="en-grid-2" style="margin-top:1rem"><article class="en-card"><h3>Signal vs noise</h3><p>Not every idea deserves to be built. Separate a real, painful problem from a passing hunch before writing anything.</p></article><article class="en-card"><h3>Speed without direction</h3><p>The faster you can build, the more you can build in the wrong direction. Discovery is the steering wheel for that speed.</p></article></div></section>
-  <section class="en-section" id="en-approach"><span class="en-kicker">The approach</span><h2>Fall in love with the problem</h2><p class="en-lead">The solution is just a vehicle; the problem is the destination. Sketch with AI to make your thinking visible so it can be evaluated. A sketch is valuable precisely because it is disposable: it invites early feedback. Separate generation from judgment — first explore freely, then judge with criteria.</p><div class="en-grid"><article class="en-card"><h3>Sketch to see</h3><p>Make the idea visible to judge it — cheaply, before it costs.</p></article><article class="en-card"><h3>Early feedback</h3><p>The sketch earns its keep by being thrown away after it teaches you something.</p></article><article class="en-card"><h3>Generate, then judge</h3><p>Diverge without censoring; converge with explicit criteria. Never at the same time.</p></article></div></section>
+  <section class="en-hero"><div class="en-section" style="padding-top:0;padding-bottom:0"><span class="en-kicker">Opening deck · present live</span><h1>From sketches to prototypes: discover before you build</h1><p class="en-lead">A companion deck to open your product discovery live. One idea per slide. <strong>Signal over noise</strong>: fall in love with the problem, not the solution. Sketch with AI to make ideas visible and judgeable; get feedback early; fail fast, learn cheap, build excellent — backed by market certainty. Technology sets the speed; the method secures the destination. Method first, (Gen)AI later.</p>
+  <div class="en-grid" style="margin-top:1.6rem"><article class="en-card"><h3>One idea per slide</h3><p>Present live, leave room to breathe. Each slide carries a single anchor phrase.</p></article><article class="en-card"><h3>Eight deliverables, one decision</h3><p>A guided path from a blank page to a tested, actionable go/no-go.</p></article><article class="en-card"><h3>The AI interviews you</h3><p>You do not lead the discovery — your AI assistant asks; you validate and decide.</p></article></div></div></section>
+
+  <section class="en-section" id="en-why"><span class="en-kicker">Why this matters</span><h2>The seductive lie</h2><p class="en-lead">Building without validating is designing your own failure. The most expensive mistake is not a bad line of code — it is a beautiful product nobody needed. AI now lets us build faster than ever, which makes one question urgent: are we sure this is worth building at all?</p><div class="en-grid-2" style="margin-top:1rem"><article class="en-card"><h3>Building blind</h3><p>Without evidence, you confuse motion with progress. Every sprint feels productive while you drift away from a real need.</p></article><article class="en-card"><h3>Speed without direction</h3><p>The faster you can build, the more you can build in the wrong direction. Discovery is the steering wheel for that speed.</p></article></div>
+  <article class="en-card" style="margin-top:1rem;border-left:5px solid var(--gold,#FFD700)"><p style="margin:0"><strong>Anchor:</strong> building without validating is designing your own failure.</p></article></section>
+
+  <section class="en-section" id="en-signal"><span class="en-kicker">Signal vs noise</span><h2>Not every idea deserves to be built</h2><p class="en-lead">An idea can feel brilliant and still be noise. Signal is a real, recurring, painful problem someone is already trying to solve — badly. Discovery is the filter that tells them apart before they cost you a quarter.</p><div class="en-grid"><article class="en-card"><h3>Noise</h3><p>A solution looking for a problem. Excitement with no evidence. "Wouldn't it be cool if…".</p></article><article class="en-card"><h3>Signal</h3><p>A painful job-to-be-done, an existing workaround, someone willing to pay attention now.</p></article><article class="en-card"><h3>The filter</h3><p>Evidence over opinion. One real conversation beats ten internal debates.</p></article></div>
+  <article class="en-card" style="margin-top:1rem;border-left:5px solid var(--blue,#137DC5)"><p style="margin:0"><strong>Anchor:</strong> separate signal from noise before you write a single line.</p></article></section>
+
+  <section class="en-section" id="en-approach"><span class="en-kicker">The approach</span><h2>Fall in love with the problem</h2><p class="en-lead">The solution is just a vehicle; the problem is the destination. Sketch with AI to make your thinking visible so it can be evaluated. A sketch is valuable precisely because it is disposable: it invites early feedback. Separate generation from judgment — first explore freely, then judge with criteria.</p><div class="en-grid"><article class="en-card"><h3>Sketch to see</h3><p>Make the idea visible to judge it — cheaply, before it costs.</p></article><article class="en-card"><h3>Early feedback</h3><p>The sketch earns its keep by being thrown away after it teaches you something.</p></article><article class="en-card"><h3>Generate, then judge</h3><p>Diverge without censoring; converge with explicit criteria. Never at the same time.</p></article></div>
+  <div class="en-grid-2" style="margin-top:1rem"><article class="en-card"><h3>Fail fast, learn cheap</h3><p>A disposable sketch fails on paper, not in production. Cheap mistakes early buy you an excellent build later.</p></article><article class="en-card"><h3>The bridge: pain → relief</h3><p>A prototype is the bridge from the user's friction to their relief. If it does not cross that gap, it is decoration.</p></article></div></section>
+
   <section class="en-section" id="en-produce"><span class="en-kicker">What you will produce</span><h2>Eight chained deliverables, one decision</h2><p class="en-lead">Not a checklist — a chain of decision. Vision guides strategy; strategy guides the rest. Success is not eight documents; it is an actionable decision, a first slice to validate, and your biggest risk with its next test.</p><div class="en-grid"><article class="en-card"><h3>0 · Kickoff</h3><p>Blank page or existing idea; framed problem + assumptions.</p></article><article class="en-card"><h3>1 · Is / Is-not matrix</h3><p>Scope and anti-scope in four quadrants.</p></article><article class="en-card"><h3>2 · Idea brief</h3><p>Problem, user, provisional value hypothesis, why now.</p></article><article class="en-card"><h3>3 · Product Vision Board</h3><p>Agnostic vision + traceability Need → Product → Goal.</p></article><article class="en-card"><h3>4 · Customer Journey Map</h3><p>Observed vs [HYPOTHESIS] + micro-test.</p></article><article class="en-card"><h3>5 · Value Proposition Canvas</h3><p>Problem-solution fit.</p></article><article class="en-card"><h3>6 · Assumptions + Experiments + First slice</h3><p>Riskiest assumptions turned into cheap tests + walking skeleton.</p></article><article class="en-card"><h3>7 · Service Blueprint</h3><p>Scoped to the first slice only.</p></article><article class="en-card"><h3>8 · Business Model Canvas</h3><p>Nine blocks + an honest PSF vs PMF verdict.</p></article></div></section>
-  <section class="en-section" id="en-how"><span class="en-kicker">How it works</span><h2>The AI interviews you</h2><p class="en-lead">You do not need to know how to run a discovery. The AI asks questions one round at a time, reflects what it understood, marks [ASSUMPTION] for anything unconfirmed, and ends each step with a confirmation gate. You validate the evidence and decide.</p><div class="en-grid"><article class="en-card"><h3>Four prompt formats</h3><p>Natural · natural + parameters · SPEC · system/user pair — per MetodologIA's 2026 Prompting Playbook.</p></article><article class="en-card"><h3>MetodologIA Protocol</h3><p>Interpret &gt; Plan &gt; Execute. The AI restates and shows its plan before acting.</p></article><article class="en-card"><h3>Confirmation gates</h3><p>No step advances without your explicit go. Human decision, always.</p></article></div></section>
-  <section class="en-section" id="en-close"><span class="en-kicker">Close</span><h2>Run the experiment of row 1</h2><p class="en-lead">A decision to continue is only legitimate when your riskiest assumptions were tested against reality, not just against other documents. <strong>Your move:</strong> run row 1 of your assumptions board and book at least one conversation with a real user. The AI designs the cheap test; you run it, no code required. Fail fast, learn cheap, build excellent — backed by market certainty.</p></section>
+
+  <section class="en-section" id="en-how"><span class="en-kicker">How it works</span><h2>The AI interviews you</h2><p class="en-lead">You do not need to know how to run a discovery. The AI asks questions one round at a time, reflects what it understood, marks [ASSUMPTION] for anything unconfirmed, and ends each step with a confirmation gate. You validate the evidence and decide.</p><div class="en-grid"><article class="en-card"><h3>Four prompt formats</h3><p>Natural · natural + parameters · SPEC · system/user pair — per MetodologIA's 2026 Prompting Playbook.</p></article><article class="en-card"><h3>MetodologIA Protocol</h3><p>Interpret &gt; Plan &gt; Execute. The AI restates and shows its plan before acting.</p></article><article class="en-card"><h3>Confirmation gates</h3><p>No step advances without your explicit go. Human decision, always.</p></article></div>
+  <div class="en-table" style="margin-top:1.2rem"><table><thead><tr><th>Format</th><th>When to use it</th></tr></thead><tbody>
+  <tr><td>Natural language</td><td>Exploring, getting started, no rigid structure needed yet.</td></tr>
+  <tr><td>Natural + parameters</td><td>You know the variables (audience, tone, length) but want it conversational.</td></tr>
+  <tr><td>SPEC method</td><td>Repeatable deliverables: Situation · Problem · Expectation · Constraints, stated explicitly.</td></tr>
+  <tr><td>System / user pair</td><td>You set the role and rules once; then iterate on the task turn by turn.</td></tr>
+  </tbody></table></div>
+  <p class="en-lead" style="margin-top:1rem">Any AI assistant works (Claude Code is just one environment option in Pristino Alfa). The method is what matters; the tool prints the speed.</p></section>
+
+  <section class="en-section" id="en-value"><span class="en-kicker">Value &amp; assumptions</span><h2>Value before solution; then price your assumptions</h2><p class="en-lead">The Value Proposition Canvas proves problem-solution fit before you fall for features. Then the Assumptions Board turns your riskiest belief into a cheap experiment — and a first slice you can actually test.</p><div class="en-grid"><article class="en-card"><h3>Value first (VPC)</h3><p>Match user pains and gains to your relievers and creators. Fit, not features.</p></article><article class="en-card"><h3>Price your assumptions</h3><p>Rank beliefs by risk × uncertainty. The riskiest one goes to row 1.</p></article><article class="en-card"><h3>First slice / walking skeleton</h3><p>The thinnest end-to-end path that proves the value — nothing more.</p></article></div>
+  <article class="en-card" style="margin-top:1rem;border-left:5px solid var(--gold,#FFD700)"><p style="margin:0"><strong>Honest market fit:</strong> tell PSF (does the problem-solution fit?) apart from PMF (does the market pull?). Most ideas die between the two — and that is good news, early.</p></article></section>
+
+  <section class="en-section" id="en-close"><span class="en-kicker">Close</span><h2>Run the experiment of row 1</h2><p class="en-lead">A decision to continue is only legitimate when your riskiest assumptions were tested against reality, not just against other documents. <strong>Your move:</strong> run row 1 of your assumptions board and book at least one conversation with a real user. The AI designs the cheap test; you run it, no code required. Fail fast, learn cheap, build excellent — backed by market certainty.</p>
+  <article class="en-card" style="margin-top:1.2rem;border-left:5px solid var(--blue,#137DC5)"><p style="margin:0">Technology prints the speed; the method secures the destination. <strong>Method first, (Gen)AI later.</strong></p></article></section>
 </main>
 <header class="cover" id="cover">
   <div class="cover-inner">
@@ -109,10 +133,22 @@ window.__bilingualNav={
     <h2>La mentira seductora</h2>
     <p class="lead">Construir sin validar es diseñar tu propio fracaso. El error más caro no es una línea de código mal escrita: es un producto hermoso que nadie necesitaba. La IA nos deja construir más rápido que nunca, y eso vuelve urgente una pregunta: ¿estamos seguros de que esto valía la pena construirlo?</p>
     <div class="grid" style="margin-top:1.2rem">
-      <article class="card"><h3>Señal vs ruido</h3><p>No toda idea merece construirse. Separa un problema real y doloroso de una corazonada pasajera antes de escribir nada.</p></article>
+      <article class="card"><h3>Construir a ciegas</h3><p>Sin evidencia confundes movimiento con avance. Cada sprint se siente productivo mientras te alejas de una necesidad real.</p></article>
       <article class="card"><h3>Velocidad sin dirección</h3><p>Mientras más rápido puedes construir, más rápido puedes ir en la dirección equivocada. El discovery es el volante de esa velocidad.</p></article>
     </div>
     <div class="callout" style="margin-top:1.4rem"><strong>Frase ancla:</strong> construir sin validar es diseñar tu propio fracaso.</div>
+  </section>
+
+  <section class="wrap" id="senal">
+    <span class="badge">Señal vs ruido</span>
+    <h2>No toda idea merece construirse</h2>
+    <p class="lead">Una idea puede sentirse brillante y aun así ser ruido. La señal es un problema real, recurrente y doloroso que alguien ya intenta resolver —mal—. El discovery es el filtro que las distingue antes de que te cuesten un trimestre.</p>
+    <div class="grid-3" style="margin-top:1.2rem">
+      <article class="card"><h3>Ruido</h3><p>Una solución buscando un problema. Entusiasmo sin evidencia. "¿No sería genial si…?".</p></article>
+      <article class="card"><h3>Señal</h3><p>Un trabajo-por-hacer doloroso, un atajo que ya existe, alguien dispuesto a prestar atención ahora.</p></article>
+      <article class="card"><h3>El filtro</h3><p>Evidencia sobre opinión. Una conversación real vale más que diez debates internos.</p></article>
+    </div>
+    <div class="callout" style="margin-top:1.4rem"><strong>Frase ancla:</strong> separa la señal del ruido antes de escribir una sola línea.</div>
   </section>
 
   <section class="wrap" id="enfoque">
@@ -123,6 +159,10 @@ window.__bilingualNav={
       <article class="card"><h3>Boceta para ver</h3><p>Haz visible la idea para poder evaluarla —barato, antes de que cueste.</p></article>
       <article class="card"><h3>Feedback temprano</h3><p>El boceto vale por ser descartable: te enseña algo y luego se tira.</p></article>
       <article class="card"><h3>Genera, luego juzga</h3><p>Diverge sin censura; converge con criterio explícito. Nunca a la vez.</p></article>
+    </div>
+    <div class="grid" style="margin-top:1rem">
+      <article class="card"><h3>Falla rápido, aprende barato</h3><p>Un boceto descartable falla en papel, no en producción. Los errores baratos y tempranos te compran una construcción excelente después.</p></article>
+      <article class="card"><h3>El puente: dolor → alivio</h3><p>El prototipo es el puente de la fricción del usuario a su alivio. Si no cruza esa brecha, es decoración.</p></article>
     </div>
     <div class="callout" style="margin-top:1.4rem;border-left-color:var(--blue)"><strong>Frase ancla:</strong> el prototipo es el puente de la fricción al alivio.</div>
   </section>
@@ -153,7 +193,26 @@ window.__bilingualNav={
       <article class="card"><h3>Protocolo MetodologIA</h3><p>Interpreta &gt; Planifica &gt; Ejecuta. La IA reformula y muestra su plan antes de actuar.</p></article>
       <article class="card"><h3>Gates de confirmación</h3><p>Ningún paso avanza sin tu visto bueno explícito. Decisión humana, siempre.</p></article>
     </div>
+    <div class="table" style="margin-top:1.2rem"><table><thead><tr><th>Formato</th><th>Cuándo usarlo</th></tr></thead><tbody>
+      <tr><td>Lenguaje natural</td><td>Explorar, arrancar, aún sin estructura rígida.</td></tr>
+      <tr><td>Natural + parámetros</td><td>Conoces las variables (audiencia, tono, extensión) pero lo quieres conversacional.</td></tr>
+      <tr><td>Método SPEC</td><td>Entregables repetibles: Situación · Problema · Expectativa · Constraints, explícitos.</td></tr>
+      <tr><td>Dupla system / user</td><td>Fijas rol y reglas una vez; luego iteras la tarea turno a turno.</td></tr>
+    </tbody></table></div>
+    <p class="lead" style="margin-top:1rem">Sirve cualquier asistente de IA (Claude Code es solo una opción de entorno en Pristino Alfa). El método es lo que importa; la herramienta imprime la velocidad.</p>
     <div class="callout" style="margin-top:1.4rem"><strong>Frase ancla:</strong> separa generar de enjuiciar; la IA propone, tú decides.</div>
+  </section>
+
+  <section class="wrap" id="valor">
+    <span class="badge">Valor y supuestos</span>
+    <h2>Valor antes que solución; luego cobra tus supuestos</h2>
+    <p class="lead">El Value Proposition Canvas prueba el fit problema-solución antes de enamorarte de las funciones. Después, el Tablero de Supuestos convierte tu creencia más riesgosa en un experimento barato —y en un primer slice que sí puedes probar.</p>
+    <div class="grid-3" style="margin-top:1.2rem">
+      <article class="card"><h3>Valor primero (VPC)</h3><p>Empareja dolores y alegrías del usuario con tus aliviadores y creadores. Fit, no funciones.</p></article>
+      <article class="card"><h3>Cobra tus supuestos</h3><p>Ordena las creencias por riesgo × incertidumbre. La más riesgosa va a la fila 1.</p></article>
+      <article class="card"><h3>Primer slice / walking skeleton</h3><p>El camino end-to-end más delgado que prueba el valor —nada más.</p></article>
+    </div>
+    <div class="callout" style="margin-top:1.4rem;border-left-color:var(--blue)"><strong>Market fit honesto:</strong> distingue PSF (¿encaja el problema con la solución?) de PMF (¿tira el mercado?). La mayoría de las ideas muere entre ambos —y eso es buena noticia, temprano.</div>
   </section>
 
   <section class="wrap" id="cierre">
@@ -435,6 +494,6 @@ html[data-theme="dark"] :is(h1,h2,h3,h4,h5,strong,summary,label)[style*="color:#
 })();
 </script>
 
-<div class="docset-version" style="text-align:center;font-family:system-ui,sans-serif;font-size:.75rem;color:#8a8676;padding:1.1rem;border-top:1px solid rgba(0,0,0,.08)">Discovery de Producto · Deck intro · v1.0 · actualizado 2026-06-03 · MetodologIA · <a href="index.html" style="color:#B8860B;text-decoration:none">Trabajar Amplificado ↑</a></div>
+<div class="docset-version" style="text-align:center;font-family:system-ui,sans-serif;font-size:.75rem;color:#8a8676;padding:1.1rem;border-top:1px solid rgba(0,0,0,.08)">Discovery de Producto · Deck intro · v1.1 · actualizado 2026-06-03 · MetodologIA · <a href="index.html" style="color:#B8860B;text-decoration:none">Trabajar Amplificado ↑</a></div>
 </body>
 </html>
